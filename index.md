@@ -1,23 +1,25 @@
 ---
 layout: default
-title: What is TianoCore?
+title: 什么是Openthos?
 id: home2
 redirect_from:
   - /site/
 ---
 {% include site-links.md %}
 
-Welcome to TianoCore, the community supporting an open source implementation of the Unified Extensible Firmware Interface ([UEFI]({{wiki}}/UEFI){:target="_blank"}). [EDK II]({{wiki}}/EDK-II){:target="_blank"} is a modern, feature-rich, cross-platform firmware development environment for the UEFI and UEFI Platform Initialization ([PI]({{wiki}}/PI){:target="_blank"}) specifications. We hope that you’ll review our [wiki]({{wiki}}){:target="_blank"} documentation, use TianoCore for platform firmware, [report any issues]({{wiki}}/Reporting-Issues){:target="_blank"} you find, and contribute to the community.
+## 产品介绍
+Openthos操作系统是一款基于Android 6开发的更优化的桌面操作系统，兼具了经典个人电脑操作系统和安卓操作系统的优势，向用户更高性能、高安全、高跨平台性的操作体验
 
-## Projects and Downloads
-If you want to compile firmware or utilities, we recommend the [Getting Started]({{baseurl}}/getting-started.html) page. This provides an overview of how to download [EDK II from github]({{wiki}}/Getting-Started-with-EDK-II){:target="_blank"}, and [reporting issues in Bugzilla]({{wiki}}/Reporting-Issues){:target="_blank"}.
+## 开发背景
+• Linux 桌面系统的主要困难 
 
-## Background
-In June of 2004, Intel announced that it would release the “Foundation Code” of its Extensible Firmware Interface (EFI), a successor to the 16-bit x86 “legacy” PC BIOS, under an open source license. This Foundation Code, developed by Intel as part of a project code named Tiano, was Intel’s “preferred implementation” of EFI. This evolved into EDK, EDK II, and other open source projects under the TianoCore community.
+• 生态、性能与用户体验 
 
-The EFI Specifications were contributed to the United EFI Forum as part of the original UEFI Specifications, which has been adopted by over 200 companies and shipped on millions of compute devices. The UEFI Forum does not endorse any particular implementation, but TianoCore is designed to implement the UEFI and UEFI PI specifications.
+• 卡、慢、丑、虚、瞎忙 
 
-<div class="tcFrontPageButtons">
-<a href="https://youtu.be/NAJ5Iwxzx_Y" target="_blank"><div class="tcButton">Watch Video</div></a>
-<a href="{{baseurl}}/getting-started.html"><div class="tcButton">Getting Started</div></a>
-</div>
+• 国产处理器多指令集给软件开发带来的压力 
+
+• Android的兴起，移动平台的垄断到向企业领域的扩张 
+
+• 主流软硬件开发商向安卓靠拢
+

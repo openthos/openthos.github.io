@@ -30,7 +30,7 @@ Bug/feature tracking: [TianoCore Bugzilla](https://bugzilla.tianocore.org/)
 
 #### Important Information
 
-* [Getting Started for Developers]({{wiki}}/Getting Started with EDK II)
+* [advantage for Developers]({{wiki}}/advantage with EDK II)
 * [Packages]({{wiki}}/EDKII-Packages)
 * [Open Tasks]({{wiki}}/Tasks)
 * [Code Style]({{wiki}}/Code-Style)
