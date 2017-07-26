@@ -90,7 +90,9 @@ ul {
 
 p {
     margin: .4em 0 .5em 0;
-    line-height: 1.5em;
+    line-height: 2em;
+    letter-spacing: 1px;
+    text-indent: 2em;
 }
 
 pre code, .w, .nc
@@ -248,6 +250,7 @@ h3 {
 	jmargin:0 2em;
 	padding:1em 1em;
 	box-shadow:4px 4px 4px rgba(0, 0, 0, 0.5);
+	margin-top: 20px;
 }
 
 .tcFrontPage .tcContentMain
@@ -348,6 +351,10 @@ h3 {
 	jbackground-color:#00ff00;
 	jmargin-left:368px;
 	jwidth:100%;
+}
+.tcFooter p{
+	text-align: left;
+	text-indent: 0;
 }
 .tcFooter a
 {
