@@ -210,7 +210,7 @@ h3 {
 	min-height:100%;	/* ensures that background continues to the full height of the browser */
 	joverflow:auto;
 	jbackground-color:#d8604c;
-	background-color:#bf5122;
+	background-color:#40968d;
 	border-left:1px solid #c29993;
 	box-shadow:inset 12px 0px 12px -8px rgba(0,0,0,0.5);	/* inset shadow, left-side only */
 	text-align:center;
@@ -230,7 +230,7 @@ h3 {
 	jpadding-top:1em;
 	jpadding-bottom:0.5em;
 	jfont-size:3em;
-	background-color:#bf5122;
+	background-color:#40968d;
 }
 
 .tcFrontPage.tcContentMain
@@ -303,7 +303,7 @@ h3 {
     content: "▪";	
 	position:absolute;
 	left:1em;
-	color:#bf5122 !important;
+	color:#33AA9E !important;
 }
 
 .tcButton
@@ -415,7 +415,7 @@ h3 {
 
 #tcNarrowModeMenu
 {
-	background-color:#bf5122;
+	background-color:#40968d;
 	jmin-height:100%;
 	text-align:center;
 	display:table;
