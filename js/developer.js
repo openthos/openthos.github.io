@@ -4,259 +4,37 @@
 
 		//Main slider
 		//-----------------------------------------------
-
-		//Revolution Slider  banner上的切换以及动画效果
-		if ($(".slider-banner-container").length>0) {
-			
-//			$(".tp-bannertimer").show();//banner下方的进度条
-
-			$('.slider-banner-container .slider-banner').show().revolution({
-				delay:3000,
-				startwidth:1140,
-				startheight:520,
-				
-				navigationArrows:"solo",
-				
-				navigationStyle: "round",
-				navigationHAlign:"center",
-				navigationVAlign:"bottom",
-				navigationHOffset:0,
-				navigationVOffset:20,
-
-				soloArrowLeftHalign:"left",
-				soloArrowLeftValign:"center",
-				soloArrowLeftHOffset:20,
-				soloArrowLeftVOffset:0,
-
-				soloArrowRightHalign:"right",
-				soloArrowRightValign:"center",
-				soloArrowRightHOffset:20,
-				soloArrowRightVOffset:0,
-
-				fullWidth:"on",
-
-				spinner:"spinner0",
-				
-				stopLoop:"off",
-				stopAfterLoops:-1,
-				stopAtSlide:-1,
-				onHoverStop: "off",
-
-				shuffle:"off",
-				
-				autoHeight:"off",						
-				forceFullWidth:"off",						
-										
-				hideThumbsOnMobile:"off",
-				hideNavDelayOnMobile:1500,						
-				hideBulletsOnMobile:"off",
-				hideArrowsOnMobile:"off",
-				hideThumbsUnderResolution:0,
-				
-				hideSliderAtLimit:0,
-				hideCaptionAtLimit:0,
-				hideAllCaptionAtLilmit:0,
-				startWithSlide:0
-			});
-
-			$('.slider-banner-container .slider-banner-2').show().revolution({
-				delay:3000,
-				startwidth:1140,
-				startheight:520,
-				
-				navigationArrows:"solo",
-				
-				navigationStyle: "preview4",
-				navigationHAlign:"center",
-				navigationVAlign:"bottom",
-				navigationHOffset:0,
-				navigationVOffset:20,
-
-				soloArrowLeftHalign:"left",
-				soloArrowLeftValign:"center",
-				soloArrowLeftHOffset:20,
-				soloArrowLeftVOffset:0,
-
-				soloArrowRightHalign:"right",
-				soloArrowRightValign:"center",
-				soloArrowRightHOffset:20,
-				soloArrowRightVOffset:0,
-
-				fullWidth:"on",
-
-				spinner:"spinner0",
-				
-				stopLoop:"off",
-				stopAfterLoops:-1,
-				stopAtSlide:-1,
-				onHoverStop: "off",
-
-				shuffle:"off",
-				
-				autoHeight:"off",						
-				forceFullWidth:"off",						
-										
-				hideThumbsOnMobile:"off",
-				hideNavDelayOnMobile:1500,						
-				hideBulletsOnMobile:"off",
-				hideArrowsOnMobile:"off",
-				hideThumbsUnderResolution:0,
-				
-				hideSliderAtLimit:0,
-				hideCaptionAtLimit:0,
-				hideAllCaptionAtLilmit:0,
-				startWithSlide:0
-			});
-
-			
-
-			$('.slider-banner-container .slider-banner-fullscreen').show().revolution({
-				delay:3000,
-				startwidth:1140,
-				startheight:520,
-				fullWidth:"off",
-				fullScreen:"on",
-				fullScreenOffsetContainer: "",
-				fullScreenOffset: "82px",
-
-				navigationArrows:"solo",
-				
-				navigationStyle: "preview4",
-				navigationHAlign:"center",
-				navigationVAlign:"bottom",
-				navigationHOffset:0,
-				navigationVOffset:20,
-
-				soloArrowLeftHalign:"left",
-				soloArrowLeftValign:"center",
-				soloArrowLeftHOffset:20,
-				soloArrowLeftVOffset:0,
-
-				soloArrowRightHalign:"right",
-				soloArrowRightValign:"center",
-				soloArrowRightHOffset:20,
-				soloArrowRightVOffset:0,
-
-				spinner:"spinner4",
-				
-				stopLoop:"off",
-				stopAfterLoops:-1,
-				stopAtSlide:-1,
-				onHoverStop: "off",
-
-				shuffle:"off",
-				hideTimerBar:"on",
-
-				autoHeight:"off",						
-				forceFullWidth:"off",						
-										
-				hideThumbsOnMobile:"off",
-				hideNavDelayOnMobile:1500,						
-				hideBulletsOnMobile:"off",
-				hideArrowsOnMobile:"off",
-				hideThumbsUnderResolution:0,
-				
-				hideSliderAtLimit:0,
-				hideCaptionAtLimit:0,
-				hideAllCaptionAtLilmit:0,
-				startWithSlide:0
-			});
-
-		};
-
-		//页面里的轮播图
-		//-----------------------------------------------
-		if ($('.owl-carousel').length>0) {
-			$(".owl-carousel.carousel").owlCarousel({
-				items: 4,
-				pagination: false,
-				navigation: true,
-				navigationText: false
-			});
-			$(".owl-carousel.carousel-autoplay").owlCarousel({
-				items: 4,
-				autoPlay: 5000,
-				pagination: false,
-				navigation: true,
-				navigationText: false
-			});
-			$(".owl-carousel.clients").owlCarousel({
-				items: 4,
-				autoPlay: true,
-				pagination: false,
-				itemsDesktopSmall: [992,5],
-				itemsTablet: [768,4],
-				itemsMobile: [479,3]
-			});
-			$(".owl-carousel.content-slider").owlCarousel({
-				singleItem: true,
-				autoPlay: 5000,
-				navigation: false,
-				navigationText: false,
-				pagination: false
-			});
-			$(".owl-carousel.content-slider-with-controls").owlCarousel({
-				singleItem: true,
-				autoPlay: false,
-				navigation: true,
-				navigationText: false,
-				pagination: true
-			});
-			$(".owl-carousel.content-slider-with-controls-autoplay").owlCarousel({
-				singleItem: true,
-				autoPlay: 5000,
-				navigation: true,
-				navigationText: false,
-				pagination: true
-			});
-			$(".owl-carousel.content-slider-with-controls-bottom").owlCarousel({
-				singleItem: true,
-				autoPlay: false,
-				navigation: true,
-				navigationText: false,
-				pagination: true
-			});
-		};
-
-		// Animations 用户部分的动画
-		//-----------------------------------------------
-		if (($("[data-animation-effect]").length>0) && !Modernizr.touch) {
-			$("[data-animation-effect]").each(function() {
-				var $this = $(this),
-				animationEffect = $this.attr("data-animation-effect");
-				if(Modernizr.mq('only all and (min-width: 768px)') && Modernizr.csstransitions) {
-					$this.appear(function() {
-						var delay = ($this.attr("data-effect-delay") ? $this.attr("data-effect-delay") : 1);
-						if(delay > 1) $this.css("effect-delay", delay + "ms");
-						setTimeout(function() {
-							$this.addClass('animated object-visible ' + animationEffect);
-						}, delay);
-					}, {accX: 0, accY: -130});
-				} else {
-					$this.addClass('object-visible');
-				}
-			});
-		};
-
-		// Stats Count To openthos云部分
-		//-----------------------------------------------
-		if ($(".stats [data-to]").length>0) {
-			$(".stats [data-to]").each(function() {
-				var $this = $(this),
-				offset = $this.offset().top;
-				if($(window).scrollTop() > (offset - 800) && !($this.hasClass('counting'))) {
-					$this.addClass('counting');
-					$this.countTo();
-				};
-				$(window).scroll(function() {
-					if($(window).scrollTop() > (offset - 800) && !($this.hasClass('counting'))) {
-						$this.addClass('counting');
-						$this.countTo();
-					}
-				});
-			});
-		};
 		
+
+		// Fixed header 页面滑动到一定距离，导航条出现
+		//-----------------------------------------------
+		var	headerTopHeight = $(".header-top").outerHeight(),
+		headerHeight = $("header.header.fixed").outerHeight();
+		$(window).scroll(function() {
+			if (($(".header.fixed").length > 0)) { 
+				if(($(this).scrollTop() > headerTopHeight+headerHeight) && ($(window).width() > 767)) {
+					$("body").addClass("fixed-header-on");
+					$(".header.fixed").addClass('animated object-visible fadeInDown');
+					if ($(".banner:not(.header-top)").length>0) {
+						$(".banner").css("marginTop", (headerHeight)+"px");
+					} else if ($(".page-intro").length>0) {
+						$(".page-intro").css("marginTop", (headerHeight)+"px");
+					} else if ($(".page-top").length>0) {
+						$(".page-top").css("marginTop", (headerHeight)+"px");
+					} else {
+						$("section.main-container").css("marginTop", (headerHeight)+"px");
+					}
+				} else {
+					$("body").removeClass("fixed-header-on");
+					$("section.main-container").css("marginTop", (0)+"px");
+					$(".banner").css("marginTop", (0)+"px");
+					$(".page-intro").css("marginTop", (0)+"px");
+					$(".page-top").css("marginTop", (0)+"px");
+					$(".header.fixed").removeClass('animated object-visible fadeInDown');
+				}
+			};
+		});
+
 		// Sharrre plugin
 		//-----------------------------------------------
 		if ($('#share').length>0) {
@@ -777,88 +555,7 @@
 	}); // End document ready
 	
 	
-	//高性能下面的自动tab切换
-	var flag = true;
-//	setInterval(function(){
-//		if(flag){
-//			$('#tab_list1').find('li').eq(1).find('a').click();
-//		}else{
-//			$('#tab_list1').find('li').eq(0).find('a').click();
-//		}
-//		flag = !flag;
-//	},5000);
 
-$('.cloud_imgs').each(function(i,v){
-	
-	$(this).hover(function(){
-//		console.log(i,v);
-		$(this).attr('src','images/cloud'+i+i+'.png');
-	},function(){
-		$(this).attr('src','images/cloud'+i+'.png');
-	})
-})
 
-//页面子导航
-var subNav_active = $(".nav_fa");
-var subNav_scroll = function(target){
-	subNav_active.removeClass("adv_active");
-	target.parent().addClass("adv_active");
-};
-$("#subNav a").click(function(){
-	subNav_scroll($(this));
-	var target = $(this).attr("href");
-	var targetScroll = $(target).offset().top-70;
-	$(this).css('text-decoration','none');
-	$("html,body").animate({scrollTop:targetScroll},300);
-	return false;
-});
-//页面跳转时定位
-if(window.location.hash){
-	var targetScroll = $(window.location.hash).offset().top - 70;
-	$("html,body").animate({scrollTop:targetScroll},300);
-}
-$(window).scroll(function(){
-	var $this = $(this);
-	var targetTop = $(this).scrollTop();
-	var footerTop = $("#footer").offset().top;
-	var height = $(window).height();
-	
-	if(targetTop<=100){
-		subNav_active.removeClass("adv_active");
-	}
-	
-	if (targetTop >= 563){
-		$("#subNav").addClass("fixedSubNav");
-		$(".empty-placeholder").removeClass("hidden");
-	}else{
-		$("#subNav").removeClass("fixedSubNav");
-		$(".empty-placeholder").addClass("hidden");
-	}
-	var one_height = $("#show1").offset().top-90;
-	var two_height = $("#show2").offset().top-90;
-	var three_height = $("#show3").offset().top-90;
-	var four_height = $("#show4").offset().top-90;
-	var five_height = $("#show5").offset().top-90;
-	var six_height = $("#show6").offset().top-90;
-	var seven_height = $("#show7").offset().top-90;
-	var eight_height = $("#show8").offset().top-90;
-	if(targetTop>=one_height && targetTop < two_height){
-		subNav_scroll($(".adv_one"));
-	}else if(targetTop >= two_height && targetTop < three_height){
-			subNav_scroll($(".adv_two"));
-	}else if(targetTop >= three_height && targetTop < four_height){
-			subNav_scroll($(".adv_three"));
-	}else if(targetTop >= four_height && targetTop < five_height){
-			subNav_scroll($(".adv_four"));
-	}else if(targetTop >= five_height && targetTop < six_height){
-			subNav_scroll($(".adv_five"));
-	}else if(targetTop >= six_height && targetTop < seven_height){
-			subNav_scroll($(".adv_six"));
-	}else if(targetTop >= seven_height && targetTop < eight_height){
-			subNav_scroll($(".adv_seven"));
-	}else if(targetTop >= eight_height){
-		subNav_scroll($(".adv_eight"));
-	}
-})
 
 })(this.jQuery);

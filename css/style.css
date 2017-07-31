@@ -1,11 +1,3 @@
-/* Theme Name:iDea - Clean & Powerful Bootstrap Theme
-Author:HtmlCoder
-Author URI:http://www.htmlcoder.me
-Author e-mail:htmlcoder.me@gmail.com
-Version:1.0.0
-Created:September 2014
-License URI:http://wrapbootstrap.com
-File Description:Main CSS file of the template */
 
 /* TABLE OF CONTENTS
 
@@ -197,6 +189,8 @@ ul {
 .list {
 	list-style: none;
 	padding: 0;
+	margin-top: 12px;
+	padding-left: 42px;
 }
 .list-icons li,
 .list li {
@@ -326,6 +320,7 @@ tbody {
 }
 .page-top {
 	padding: 40px 0;
+	margin-top: 30px;
 }
 .main-container {
 	padding: 40px 0;
@@ -338,8 +333,8 @@ tbody {
 }
 .footer {
 	padding: 30px 0;
-	background-color: #262626;
-	border-top: 1px solid #3a3a3a;
+	background-color: #f3f3f3;
+	border-top: 1px solid #e4e4e4;
 	border-bottom: 1px solid #333333;
 }
 .subfooter {
@@ -463,7 +458,7 @@ tbody {
 	border-bottom: 1px solid #dadada !important;
 }
 .gray-bg {
-	background-color: #262626;
+	background-color: #431E85;
 	-webkit-box-shadow: 0 2px 3px rgba(0, 0, 0, 0.13) !important;
 	box-shadow: 0 2px 3px rgba(0, 0, 0, 0.13) !important;
 	position: relative;
@@ -671,67 +666,57 @@ tbody {
 
 /* Custom Grid
 ---------------------------------- */
-.grid-space-20 {
+.img-grid-space-20 {
 	margin-right: -10.5px;
 	margin-left: -10.5px;
+	position: relative;
+	height: 500px;
 }
-.grid-space-20 .col-lg-6,
-.grid-space-20 .col-lg-4,
-.grid-space-20 .col-lg-3,
-.grid-space-20 .col-md-6,
-.grid-space-20 .col-md-4,
-.grid-space-20 .col-md-3,
-.grid-space-20 .col-sm-6,
-.grid-space-20 .col-sm-4,
-.grid-space-20 .col-sm-3,
-.grid-space-20 .col-xs-6,
-.grid-space-20 .col-xs-4,
-.grid-space-20 .col-xs-3 {
-	padding-left: 10px;
-	padding-right: 10px;
+.img-grid-space-20 img{
+	width: 150px;
+	height: 200px;
+	padding: 10px;
+	background: white;
+	border: 1px solid gray;
+	position: absolute;
+	 -webkit-transition: 1s;
+	/* -webkit-是为了设置动画兼容的,所以为了能让动画适应谷歌浏览器 我们要在属性前面加上-webkit     transition相当于一个过渡*/
+	z-index: 1;
 }
-.grid-space-10 {
-	margin-right: -6px;
-	margin-left: -6px;
+.img-grid-space-20 .tu1{
+	top:10%;
+	left: 20%;
+	-webkit-transform:rotate(10deg);
+	/*transform的含义是：改变，使…变形    rotate() 方法，元素顺时针旋转给定的角度。允许负值，元素将逆时针旋转。*/
 }
-.grid-space-10 .col-lg-6,
-.grid-space-10 .col-lg-4,
-.grid-space-10 .col-lg-3,
-.grid-space-10 .col-md-6,
-.grid-space-10 .col-md-4,
-.grid-space-10 .col-md-3,
-.grid-space-10 .col-sm-6,
-.grid-space-10 .col-sm-4,
-.grid-space-10 .col-sm-3,
-.grid-space-10 .col-xs-6,
-.grid-space-10 .col-xs-4,
-.grid-space-10 .col-xs-3 {
-	padding-left: 5px;
-	padding-right: 5px;
+.img-grid-space-20 .tu2{
+	top:34%;
+	left: 28%;
+	-webkit-transform:rotate(-10deg);
 }
-.grid-space-0 {
-	margin-right: 0;
-	margin-left: 0;
+.img-grid-space-20 .tu3{
+	top:53%;
+	left: 41%;
+	-webkit-transform:rotate(8deg);
+	z-index: 10;
 }
-.grid-space-0 .col-lg-6,
-.grid-space-0 .col-lg-4,
-.grid-space-0 .col-lg-3,
-.grid-space-0 .col-md-6,
-.grid-space-0 .col-md-4,
-.grid-space-0 .col-md-3,
-.grid-space-0 .col-sm-6,
-.grid-space-0 .col-sm-4,
-.grid-space-0 .col-sm-3,
-.grid-space-0 .col-xs-6,
-.grid-space-0 .col-xs-4,
-.grid-space-0 .col-xs-3 {
-	padding-left: 0;
-	padding-right: 0;
+.img-grid-space-20 .tu4{
+	top:10%;
+	right: 25%;
+	-webkit-transform:rotate(10deg);
 }
-.grid-space-0>div {
-	margin-bottom: 0;
-	padding-bottom: 0;
+.img-grid-space-20 .tu5{
+	top:30%;
+	right: 35%;
+	-webkit-transform:rotate(-10deg);
 }
+.img-grid-space-20 img:hover{
+	/* translate(100px,100px) 把元素从左侧移动 100 像素，从顶端移动 100 像素。*/
+	-webkit-transform:translate(60px,60px) scale(1.2,1.2);/* scale(1.2) 把宽度转换为原始尺寸的 1.2 倍，把高度转换为原始高度的 1.2倍。*/
+	box-shadow: 0px 0px 5px #666;
+	z-index: 20;
+}
+
 
 /* Small devices (tablets, phones less than 767px) */
 @media (max-width:767px) {
@@ -910,6 +895,7 @@ tbody {
 .touch .object-non-visible {
 	opacity: 1 !important;
 	filter: alpha(opacity=100) !important;
+	/*margin-top: 30px;*/
 }
 
 /* Targeting only Firefox for smoothest animations */
@@ -1006,7 +992,7 @@ tbody {
 }
 .footer h2 {
 	font-size: 24px;
-	margin-bottom: 30px;
+	/*margin-bottom: 30px;*/
 }
 .light .footer,
 .light .footer h1,
@@ -1025,6 +1011,7 @@ tbody {
 }
 .subfooter p {
 	margin: 0;
+	text-align: center;
 }
 
 /* Small devices (tablets, 768px and up) */
@@ -2710,7 +2697,7 @@ ul.pagination li > a:focus {
 	font-size: 14px;
 	font-weight: 700;
 	position: absolute;
-	right: 15px;
+	left: 85px;
 	top: 9px;
 	color: #d1d1d1;
 	-webkit-transition: all 0.2s ease-in-out;
@@ -2727,7 +2714,7 @@ ul.pagination li > a:focus {
 .nav-pills > li > a:hover:after,
 .nav-pills > li > a:focus:after {
 	color: #e84c3d;
-	right: 10px;
+	left: 90px;
 }
 .footer-content .nav-pills > li > a {
 	padding: 4px 0px;
@@ -2747,7 +2734,7 @@ ul.pagination li > a:focus {
 }
 .footer-content .nav-pills > li.active > a:hover,
 .footer-content .nav-pills > li > a:hover {
-	color: #fff;
+	color: #3c3c3c;
 	background-color: transparent;
 	border-color: transparent;
 }
@@ -3248,7 +3235,7 @@ a.overlay.small i {
 
 /* first level menu items */
 .navbar-default .navbar-nav > li > a {
-	color: #666666;
+	color: #92989b;
 	text-transform: uppercase;
 	font-size: 16px;
 	font-weight: 700;
@@ -3268,16 +3255,18 @@ a.overlay.small i {
 	-o-transition: all 0.2s ease-out;
 	-ms-transition: all 0.2s ease-out;
 	transition: all 0.2s ease-out;
+	color: #954db3;
 }
 
 /* first level active menu items on hover/focus */
 .navbar-default .navbar-nav > .active > a,
 .navbar-default .navbar-nav > .active > a:focus {
-	color: #e84c3d;
+	color: #954db3;
 	background-color: transparent;
 }
 .navbar-default .navbar-nav > .active > a:hover {
 	background-color: transparent;
+	color: #954db3;
 }
 
 /* first level active menu items when opened */
@@ -3946,7 +3935,7 @@ a.overlay.small i {
 	color: #e84c3d;
 }
 .box-style-3 {
-	margin-top: 20px;
+	margin-top: 40px;
 }
 .box-style-3 i {
 	font-size: 22px;
@@ -3966,6 +3955,7 @@ a.overlay.small i {
 }
 .box-style-3 .body {
 	margin-left: 80px;
+	height: 45px;
 }
 .box-style-3 h2 {
 	font-size: 20px;
@@ -4005,6 +3995,7 @@ a.overlay.small i {
 		margin-right: 80px;
 		text-align: right;
 		margin-left: 0;
+		height: 45px;
 	}
 }
 
@@ -4825,7 +4816,7 @@ ul.tweets li span {
 	height: 50px;
 	text-align: center;
 	cursor: pointer;
-	background-color: #000000;
+	background-color: #c29bd2;
 	z-index: 1005;
 	display: none;
 }
@@ -5389,3 +5380,26 @@ ul.tweets li span {
 	width: 30px;
 }
 
+/*页内导航*/
+#subNav{display: none;}
+@media(min-width: 961px){
+	#subNav {display: block;width: 100%;height: 70px;text-align: center;background: #f8f8f8;z-index: 100;margin-top: -1px;}
+	#subNav .wrap{height: 70px;}
+	#subNav li{float:left;position:relative;list-style: none;}
+	#subNav a{display:table-cell;width:110px;height:70px;text-align:center;vertical-align:middle;color:#9c9a9a;}
+	#subNav a:hover{text-decoration:none}
+	#subNav a:hover,#subNav .adv_active a{background-color:#c29bd2;color:#fff}
+}
+
+.fixedSubNav{position:fixed;top:0;left:0;z-index:1000}
+
+/*下载*/
+.download a{color: #c29bd2;display: block;}
+.download a:hover{text-decoration: none;color: #c29bd2;}
+.download a .letter p{font-size: 2em;font-weight: 100;text-align: center;}
+.download a .letter p.version{color: #0F0F0F;font-size: 1.5em;}
+.download .col-md-4{margin-top:40px;margin-bottom: 40px;}
+
+.footer-content{margin-top: -15px;}
+.footer-content .contact{text-align: center;margin-top: 18px;}
+.footer-content .circle{text-align: center;}
