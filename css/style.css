@@ -5381,17 +5381,25 @@ ul.tweets li span {
 }
 
 /*页内导航*/
-#subNav{display: none;}
-@media(min-width: 961px){
-	#subNav {display: block;width: 100%;height: 70px;text-align: center;background: #f8f8f8;z-index: 100;margin-top: -1px;}
-	#subNav .wrap{height: 70px;}
-	#subNav li{float:left;position:relative;list-style: none;}
-	#subNav a{display:table-cell;width:110px;height:70px;text-align:center;vertical-align:middle;color:#9c9a9a;}
-	#subNav a:hover{text-decoration:none}
-	#subNav a:hover,#subNav .adv_active a{background-color:#c29bd2;color:#fff}
-}
 
+
+@media(min-width: 1200px){
+#subNav a{width: 110px;}
+}
+@media (min-width:961px) and (max-width:1199px){
+#subNav a{width: 85px;}
+}
+#subNav {display: block;width: 100%;height: 70px;text-align: center;background: #f8f8f8;z-index: 100;margin-top: -1px;}
+#subNav .wrap{height: 70px;}
+#subNav li{float:left;position:relative;list-style: none;}
+#subNav a{display:table-cell;height:70px;text-align:center;vertical-align:middle;color:#9c9a9a;}
+#subNav a:hover{text-decoration:none}
+#subNav a:hover,#subNav .adv_active a{background-color:#c29bd2;color:#fff}
 .fixedSubNav{position:fixed;top:0;left:0;z-index:1000}
+
+@media(max-width: 961px){
+#subNav{display: none;}
+}
 
 /*下载*/
 .download a{color: #c29bd2;display: block;}
