@@ -1,0 +1,84 @@
+{% include head.html %}
+<!-- page-intro start-->
+<!-- ================ -->
+<div class="page-intro">
+	<div class="blog_content">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-12">
+					<ol class="breadcrumb">
+						<li><i class="fa fa-home pr-10"></i><a href="{{baseurl}}/index.html">Home</a></li>
+						<li class="active">Blog</li>
+					</ol>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+<!-- page-intro end -->
+
+<section class="main-container">
+	<div class="container">
+		<div class="row">
+			<div class="main col-md-12">
+				<h1 class="page-title">Blog</h1>
+				<div class="separator-2"></div>
+				<p>记录工作日志</p>
+				{% for post in site.posts %}
+				<!-- blogpost start -->
+				<article class="clearfix blogpost object-non-visible" data-animation-effect="fadeInUpSmall" data-effect-delay="200">
+					<div class="overlay-container">
+						<img src="{{baseurl}}/images/blog-1.png" alt="">
+						<div class="overlay">
+							<div class="overlay-links">
+								<a href="#"><i class="fa fa-link"></i></a>
+								<a href="{{baseurl}}/images/blog-1.png" class="popup-img-single" title="image title"><i class="fa fa-search-plus"></i></a>
+							</div>
+						</div>
+					</div>
+					<div class="blogpost-body">
+						<div class="post-info">
+							<span class="day">{{ post.date | date: '%d' }}</span>
+							<span class="month">
+								{% assign m = post.date | date: "%-m" %}
+                                    {% case m %}
+                                      {% when '1' %}January
+                                      {% when '2' %}Febrary
+                                      {% when '3' %}March
+                                      {% when '4' %}April
+                                      {% when '5' %}May
+                                      {% when '6' %}June
+                                      {% when '7' %}July
+                                      {% when '8' %}August
+                                      {% when '9' %}September
+                                      {% when '10' %}October
+                                      {% when '11' %}November
+                                      {% when '12' %}December
+                                    {% endcase %}
+							</span>
+							<span class="year">{{ post.date | date: '%-y' }}</span>
+						</div>
+						<div class="blogpost-content">
+							<header>
+								<h2 class="title"><a href="blog-post.html">Blogpost with image</a></h2>
+								<div class="submitted"><i class="fa fa-user pr-5"></i> by <a href="#">John Doe</a></div>
+							</header>
+							<p>Mauris dolor sapien, malesuada at interdum ut, hendrerit eget lorem. Nunc interdum mi neque, et  sollicitudin purus fermentum ut. Suspendisse faucibus nibh odio, a vehicula eros pharetra in. Maecenas  ullamcorper commodo rutrum. In iaculis lectus vel augue eleifend dignissim. Aenean viverra semper sollicitudin.</p>
+						</div>
+					</div>
+					<footer class="clearfix">
+						<ul class="links pull-left">
+							<li><i class="fa fa-comment-o pr-5"></i> <a href="#">22 comments</a> |</li> 
+							<li><i class="fa fa-tags pr-5"></i> <a href="#">tag 1</a>, <a href="#">tag 2</a>, <a href="#">long tag 3</a> </li>
+						</ul>
+						<a class="pull-right link" href="#"><span>Read more</span></a>
+					</footer>
+				</article>
+				<!-- blogpost end -->
+				{%endfor%}
+			</div>
+		</div>
+	</div>
+</section>
+
+{% include footer.html %}
