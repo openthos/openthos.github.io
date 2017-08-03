@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+{% include site-vars.liquid %}<!DOCTYPE html>
 <html lang="en">
 	<head>
 		<meta charset="utf-8">
@@ -10,35 +10,42 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 		<!-- Favicon -->
-		<link rel="shortcut icon" href="images/favicon.ico">
+		<link rel="shortcut icon" href="{{baseurl}}/images/favicon.ico">
 		 
 		 
 
 		<!-- Bootstrap core CSS -->
-		<link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
+		<link href="{{baseurl}}/bootstrap/css/bootstrap.min.css" rel="stylesheet">
 
 		<!-- Font Awesome CSS -->
-		<link href="fonts/font-awesome/css/font-awesome.css" rel="stylesheet">
+		<link href="{{baseurl}}/fonts/font-awesome/css/font-awesome.css" rel="stylesheet">
 
 		<!-- Fontello CSS -->
-		<link href="fonts/fontello/css/fontello.css" rel="stylesheet">
+		<link href="{{baseurl}}/fonts/fontello/css/fontello.css" rel="stylesheet">
 
 		<!-- Plugins -->
-		<link href="plugins/rs-plugin/css/settings.css" media="screen" rel="stylesheet">
-		<link href="plugins/rs-plugin/css/extralayers.css" media="screen" rel="stylesheet">
-		<link href="plugins/magnific-popup/magnific-popup.css" rel="stylesheet">
-		<link href="css/animations.css" rel="stylesheet">
-		<link href="plugins/owl-carousel/owl.carousel.css" rel="stylesheet">
+		<link href="{{baseurl}}/plugins/rs-plugin/css/settings.css" media="screen" rel="stylesheet">
+		<link href="{{baseurl}}/plugins/rs-plugin/css/extralayers.css" media="screen" rel="stylesheet">
+		<link href="{{baseurl}}/plugins/magnific-popup/magnific-popup.css" rel="stylesheet">
+		<link href="{{baseurl}}/css/animations.css" rel="stylesheet">
+		<link href="{{baseurl}}/plugins/owl-carousel/owl.carousel.css" rel="stylesheet">
 
 		<!-- iDea core CSS file -->
-		<link href="css/style.css" rel="stylesheet">
-
+		<link href="{{baseurl}}/css/style.css" rel="stylesheet">
+		{%if page.mark == 'blog'%}
+		<link href="{{baseurl}}/css/blog.css" rel="stylesheet">
+		{%endif%}
+		
+		{%if page.mark == 'join'%}
+		<link href="{{baseurl}}/css/join.css" rel="stylesheet">
+		{%endif%}
+		
 		<!-- Color Scheme (In order to change the color scheme, replace the red.css with the color scheme that you prefer)-->
-		<link href="css/skins/purple.css" rel="stylesheet">
+		<link href="{{baseurl}}/css/skins/purple.css" rel="stylesheet">
 
 		<!-�C[if lt IE 9]-->
-		<script type="text/javascript"  src="js/html5shiv.js"></script >
-		<script type="text/javascript" src="js/selectivizr.js"></script>
+		<script type="text/javascript"  src="{{baseurl}}/js/html5shiv.js"></script >
+		<script type="text/javascript" src="{{baseurl}}/js/selectivizr.js"></script>
 		<!--[endif]�C- > 
 		
 	</head>
@@ -61,7 +68,7 @@
 			<header class="header fixed clearfix">
 				<div class="container">
 					<div class="row">
-						<div class="col-md-3">
+						<div class="col-md-3 ">
 
 							<!-- header-left start -->
 							<!-- ================ -->
@@ -69,7 +76,7 @@
 
 								<!-- logo -->
 								<div class="logo">
-									<a href="index.html"><img id="logo" src="images/logo_1.png" alt="iDea"></a>
+									<a href="{{baseurl}}/index.html"><img id="logo" src="{{baseurl}}/images/logo_1.png" alt="iDea"></a>
 								</div>
 
 							</div>
@@ -105,15 +112,33 @@
 											<div class="collapse navbar-collapse" id="navbar-collapse-1">
 												<ul class="nav navbar-nav navbar-right">
 													<li class="dropdown {% if page.id == 1 %}active{%endif%}">
-														<a href="index.html" >首&nbsp;页</a>
+														<a href="{{baseurl}}/index.html" >首&nbsp;页</a>
 													</li>
 													<!-- mega-menu start -->
 													<li class="dropdown mega-menu {% if page.id == 2 %}active{%endif%}">
-														<a href="developer.html">开发者</a>
+														<a class="dropdown-toggle" data-toggle="dropdown" href="#">
+															{% if page.mark == 'join' %}
+															加入Openthos
+															{% endif %}	
+															{% if page.mark == 'blog' %}
+															攻城狮手札
+															{% endif %}	
+															{%if page.mark == 'other'%}
+															开发者
+															{% endif %}		
+														</a>
+														<ul class="dropdown-menu">
+															<!--<li><div class="divider"></div></li>-->
+															<li><a href="{{baseurl}}/join.html" class="{% if page.mark == 'join' %}a_purple{%endif%}"><i class="icon-right-open"></i>加入openthos</a></li>
+															<li><div class="divider"></div></li>
+															<li><a href="{{baseurl}}/blog" class="{% if page.mark == 'blog' %}a_purple{%endif%}"><i class="icon-right-open"></i>攻城狮手札</a></li>
+															<li><div class="divider"></div></li>
+															<li><a href="#"><i class="icon-right-open"></i>社区</a></li>
+														</ul>
 													</li>
 													<!-- mega-menu end -->
 													<li class="dropdown {% if page.id == 3 %}active{%endif%}">
-														<a href="about.html">关于我们</a>
+														<a href="{{baseurl}}/about.html">关于我们</a>
 													</li>
 												</ul>
 											</div>

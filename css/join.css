@@ -1,0 +1,12 @@
+
+.blog_content{background: #f5f5f5;}
+/*.page-intro .container{width: 100%;padding: 0;}*/
+.breadcrumb i{padding-right: 10px;}
+.breadcrumb{margin-top: 10px;}
+.page-intro {
+	/*padding: 10px 0;*/
+	-webkit-box-shadow: 0 -1px 2px rgba(0, 0, 0, 0.06) inset;
+	box-shadow: 0 -1px 2px rgba(0, 0, 0, 0.06) inset;
+	background-color: #fafafa;
+	border-bottom: 1px solid #dadada;
+}
