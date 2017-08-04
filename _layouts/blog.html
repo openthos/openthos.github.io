@@ -8,7 +8,9 @@
 				<h1 class="page-title">Blog</h1>
 				<div class="separator-2"></div>
 				<p>记录工作日志</p>
-				{% for post in site.posts %}
+				{%assign index = paginator.page | times: paginator.per_page | minus: paginator.per_page %} 
+                {% for post in site.posts limit: paginator.per_page offset: index%} 
+                {% assign post_sitedata = site.data.posts[post.title] %}
 				<!-- blogpost start -->
 				<article class="clearfix blogpost object-non-visible" data-animation-effect="fadeInUpSmall" data-effect-delay="200">
 					<div class="overlay-container">
@@ -44,10 +46,11 @@
 						</div>
 						<div class="blogpost-content">
 							<header>
-								<h2 class="title"><a href="blog-post.html">Blogpost with image</a></h2>
-								<div class="submitted"><i class="fa fa-user pr-5"></i> by <a href="#">John Doe</a></div>
+								<h2 class="title"><a href="{{post.url}}">{{post.title}}</a></h2>
+								<div class="submitted"><i class="fa fa-user pr-5"></i> by <a href="#">{{post.name}}</a></div>
 							</header>
-							<p>Mauris dolor sapien, malesuada at interdum ut, hendrerit eget lorem. Nunc interdum mi neque, et  sollicitudin purus fermentum ut. Suspendisse faucibus nibh odio, a vehicula eros pharetra in. Maecenas  ullamcorper commodo rutrum. In iaculis lectus vel augue eleifend dignissim. Aenean viverra semper sollicitudin.</p>
+							{{post.excerpt}}
+							<!--<p>Mauris dolor sapien, malesuada at interdum ut, hendrerit eget lorem. Nunc interdum mi neque, et  sollicitudin purus fermentum ut. Suspendisse faucibus nibh odio, a vehicula eros pharetra in. Maecenas  ullamcorper commodo rutrum. In iaculis lectus vel augue eleifend dignissim. Aenean viverra semper sollicitudin.</p>-->
 						</div>
 					</div>
 					<footer class="clearfix">
@@ -60,6 +63,26 @@
 				</article>
 				<!-- blogpost end -->
 				{%endfor%}
+				
+				<!-- pagination start -->
+				{% if paginator.total_pages > 1 %}
+				<ul class="pagination">
+					{% if paginator.previous_page %}
+					<li><a href="#"><<</a></li>
+					{%endif%}
+					{% for page in (1..paginator.total_pages) %} 
+					{%if page == paginator.page%}
+					<li class="active"><a href="#">{{page}} <span class="sr-only">(current)</span></a></li>
+					{%else%}
+					<li><a href="#">{{page}}</a></li>
+					{%endif%}
+					{%endfor%}
+					{% if paginator.next_page %}
+					<li><a href="#">>></a></li>
+					{%endif%}
+				</ul>
+				{%endif%}
+				<!-- pagination end -->
 			</div>
 		</div>
 	</div>
