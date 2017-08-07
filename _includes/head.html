@@ -111,11 +111,11 @@
 											<!-- Collect the nav links, forms, and other content for toggling -->
 											<div class="collapse navbar-collapse" id="navbar-collapse-1">
 												<ul class="nav navbar-nav navbar-right">
-													<li class="dropdown {% if page.id == 1 %}active{%endif%}">
+													<li class="dropdown {% if page.number == 1 %}active{%endif%}">
 														<a href="{{baseurl}}/index.html" >首&nbsp;页</a>
 													</li>
 													<!-- mega-menu start -->
-													<li class="dropdown mega-menu {% if page.id == 2 %}active{%endif%}">
+													<li class="dropdown mega-menu {% if page.number == 2 %}active{%endif%}">
 														<a class="dropdown-toggle" data-toggle="dropdown" href="#">
 															{% if page.mark == 'join' %}
 															加入Openthos
@@ -137,7 +137,7 @@
 														</ul>
 													</li>
 													<!-- mega-menu end -->
-													<li class="dropdown {% if page.id == 3 %}active{%endif%}">
+													<li class="dropdown {% if page.number == 3 %}active{%endif%}">
 														<a href="{{baseurl}}/about.html">关于我们</a>
 													</li>
 												</ul>

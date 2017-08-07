@@ -377,6 +377,8 @@ ul.pagination li {
 ul.pagination li > a,
 .pagination > li:first-child > a,
 .pagination > li:last-child > a,
+.pagination > li:first-child > span,
+.pagination > li:last-child > span,
 ul.pager li > a {
 	padding: 10px 15px;
 	border: 1px solid #f3f3f3;
@@ -388,19 +390,23 @@ ul.pager li > a {
 	border-radius: 0px;
 	color: #666666;
 }
-ul.pagination li > a:hover {
+ul.pagination li > a:hover,ul.pagination li > span:hover {
 	background-color: transparent;
 	color: #ffffff;
-	background-color: #e84c3d;
-	border-color: #e84c3d;
+	background-color: #954db3;
+	border-color: #954db3;
+	cursor: pointer;
 }
 ul.pagination li.active a,
+ul.pagination li.active span,
 .pagination > .active > a:hover,
+.pagination > .active > span:hover,
 .pagination > .active > a:focus {
 	color: #ffffff;
-	background-color: #e84c3d;
-	border-color: #e84c3d;
+	background-color: #954db3;
+	border-color: #954db3;
 	line-height: 1;
+	padding: 10px 15px;
 }
 ul.pagination li > a:focus {
 	background: none;

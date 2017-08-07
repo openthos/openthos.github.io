@@ -1,7 +1,7 @@
 ---
 layout: home
 title: Openthos
-id: 1
+number: 1
 mark: other
 ---
 
