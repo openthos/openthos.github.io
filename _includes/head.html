@@ -10,7 +10,7 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 		<!-- Favicon -->
-		<link rel="shortcut icon" href="{{baseurl}}/images/favicon.ico">
+		<link rel="shortcut icon" href="../images/favicon.ico">
 		 
 		 
 
@@ -35,6 +35,9 @@
 		
 		{%if page.mark == 'join'%}
 		<link href="{{baseurl}}/css/join.css" rel="stylesheet">
+		{%endif%}
+		{%if page.mark == 'about'%}
+		<link href="{{baseurl}}/css/about.css" rel="stylesheet">
 		{%endif%}
 		
 		<!-- Color Scheme (In order to change the color scheme, replace the red.css with the color scheme that you prefer)-->
@@ -73,7 +76,7 @@
 
 								<!-- logo -->
 								<div class="logo">
-									<a href="{{baseurl}}/index.html"><img id="logo" src="{{baseurl}}/images/logo_1.png" alt="iDea"></a>
+									<a href="{{baseurl}}/index.html"><img id="logo" src="../images/logo_1.png" alt="iDea"></a>
 								</div>
 
 							</div>
