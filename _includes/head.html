@@ -32,9 +32,6 @@
 
 		<!-- iDea core CSS file -->
 		<link href="{{baseurl}}/css/style.css" rel="stylesheet">
-		{%if page.mark == 'blog'%}
-		<link href="{{baseurl}}/css/blog.css" rel="stylesheet">
-		{%endif%}
 		
 		{%if page.mark == 'join'%}
 		<link href="{{baseurl}}/css/join.css" rel="stylesheet">
@@ -116,25 +113,9 @@
 													</li>
 													<!-- mega-menu start -->
 													<li class="dropdown mega-menu {% if page.number == 2 %}active{%endif%}">
-														<a class="dropdown-toggle" data-toggle="dropdown" href="#">
-															{% if page.mark == 'join' %}
-															加入Openthos
-															{% endif %}	
-															{% if page.mark == 'blog' %}
-															攻城狮手札
-															{% endif %}	
-															{%if page.mark == 'other'%}
-															开发者
-															{% endif %}		
+														<a href="{{baseurl}}/join.html">
+															加入OPENTHOS	
 														</a>
-														<ul class="dropdown-menu">
-															<!--<li><div class="divider"></div></li>-->
-															<li><a href="{{baseurl}}/join.html" class="{% if page.mark == 'join' %}a_purple{%endif%}"><i class="icon-right-open"></i>加入openthos</a></li>
-															<li><div class="divider"></div></li>
-															<li><a href="{{baseurl}}/blog" class="{% if page.mark == 'blog' %}a_purple{%endif%}"><i class="icon-right-open"></i>攻城狮手札</a></li>
-															<li><div class="divider"></div></li>
-															<li><a href="#"><i class="icon-right-open"></i>社区</a></li>
-														</ul>
 													</li>
 													<!-- mega-menu end -->
 													<li class="dropdown {% if page.number == 3 %}active{%endif%}">

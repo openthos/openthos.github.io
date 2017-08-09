@@ -1,6 +1,6 @@
 ---
 layout: about
-title: Openthos
+title: OPENTHOS
 number: 3
 mark: other
 ---

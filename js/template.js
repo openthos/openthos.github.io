@@ -412,15 +412,15 @@
 //		flag = !flag;
 //	},5000);
 
-$('.cloud_imgs').each(function(i,v){
-	
-	$(this).hover(function(){
-//		console.log(i,v);
-		$(this).attr('src','images/cloud'+i+i+'.png');
-	},function(){
-		$(this).attr('src','images/cloud'+i+'.png');
-	})
-})
+//$('.cloud_imgs').each(function(i,v){
+//	
+//	$(this).hover(function(){
+////		console.log(i,v);
+//		$(this).attr('src','images/cloud'+i+i+'.png');
+//	},function(){
+//		$(this).attr('src','images/cloud'+i+'.png');
+//	})
+//})
 
 //页面子导航
 var subNav_active = $(".nav_fa");
@@ -444,14 +444,16 @@ if(window.location.hash){
 $(window).scroll(function(){
 	var $this = $(this);
 	var targetTop = $(this).scrollTop();
-	var footerTop = $("#footer").offset().top;
+	var headerTop = $('.header').offset().top;
+	var bannerTop = $("#banner").offset().top;
 	var height = $(window).height();
+
 	
 	if(targetTop<=100){
 		subNav_active.removeClass("adv_active");
 	}
 	
-	if (targetTop >= 563){
+	if (targetTop >= height-bannerTop){
 		$("#subNav").addClass("fixedSubNav");
 		$(".empty-placeholder").removeClass("hidden");
 	}else{
@@ -462,27 +464,28 @@ $(window).scroll(function(){
 	var two_height = $("#show2").offset().top-90;
 	var three_height = $("#show3").offset().top-90;
 	var four_height = $("#show4").offset().top-90;
-	var five_height = $("#show5").offset().top-90;
-	var six_height = $("#show6").offset().top-90;
-	var seven_height = $("#show7").offset().top-90;
-	var eight_height = $("#show8").offset().top-90;
+//	var five_height = $("#show5").offset().top-90;
+//	var six_height = $("#show6").offset().top-90;
+//	var seven_height = $("#show7").offset().top-90;
+//	var eight_height = $("#show8").offset().top-90;
 	if(targetTop>=one_height && targetTop < two_height){
 		subNav_scroll($(".adv_one"));
 	}else if(targetTop >= two_height && targetTop < three_height){
 			subNav_scroll($(".adv_two"));
 	}else if(targetTop >= three_height && targetTop < four_height){
 			subNav_scroll($(".adv_three"));
-	}else if(targetTop >= four_height && targetTop < five_height){
+	}else if(targetTop >= four_height){
 			subNav_scroll($(".adv_four"));
-	}else if(targetTop >= five_height && targetTop < six_height){
-			subNav_scroll($(".adv_five"));
-	}else if(targetTop >= six_height && targetTop < seven_height){
-			subNav_scroll($(".adv_six"));
-	}else if(targetTop >= seven_height && targetTop < eight_height){
-			subNav_scroll($(".adv_seven"));
-	}else if(targetTop >= eight_height){
-		subNav_scroll($(".adv_eight"));
 	}
+//else if(targetTop >= five_height && targetTop < six_height){
+//			subNav_scroll($(".adv_five"));
+//	}else if(targetTop >= six_height && targetTop < seven_height){
+//			subNav_scroll($(".adv_six"));
+//	}else if(targetTop >= seven_height && targetTop < eight_height){
+//			subNav_scroll($(".adv_seven"));
+//	}else if(targetTop >= eight_height){
+//		subNav_scroll($(".adv_eight"));
+//	}
 })
 
 })(this.jQuery);
