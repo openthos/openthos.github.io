@@ -1,6 +1,6 @@
 ---
 layout: home
-title: Openthos
+title: OPENTHOS
 number: 1
 mark: other
 ---

@@ -1,6 +1,6 @@
 ---
 layout: join
-title: Openthos
+title: OPENTHOS
 number: 2
 mark: join
 ---
