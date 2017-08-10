@@ -71,7 +71,7 @@ img {
 	width: 100%;
 	height: auto;
 }
-#logo{width: auto;display: inline-block;}
+
 pre {
 	padding: 20px;
 	-webkit-border-radius: 0px;
@@ -90,7 +90,7 @@ ul {
 	list-style: none;
 	padding: 0;
 	margin-top: 12px;
-	padding-left: 42px;
+	/*padding-left: 42px;*/
 }
 .list-icons li{
 	padding: 5px 0;
@@ -712,6 +712,7 @@ ul {
 ----------------------------------------------------------------------------- */
 /* Logo
 ---------------------------------- */
+
 .logo img {
 	-webkit-transition: all 0.2s linear;
 	-moz-transition: all 0.2s linear;
@@ -723,6 +724,7 @@ ul {
 	opacity: 0.85;
 	filter: alpha(opacity=85);
 }
+#logo{width: auto;display: inline-block;}
 .main-container .logo img {
 	margin: 0 auto;
 }
@@ -1074,16 +1076,18 @@ ul {
 }
 
 @media only screen and (min-width: 768px) and (max-width: 992px) {
-	.footer-content .col-xs-12{
+.footer-content .col-xs-12{
 	padding-left: 8%;
 }
 .footer-content .col-xs-12.foot_links{padding-left: 17%;}
+
 }
 
 @media(max-width: 768px) {
 .footer-content .col-xs-12{
 	padding-left: 27%;
 }
+.footer-content .col-xs-12.contactUs{padding-left: 35%;}
 .footer-content .col-xs-12.foot_links{padding-left: 43%;}
 }
 
