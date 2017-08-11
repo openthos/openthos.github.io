@@ -91,4 +91,13 @@
 	border-bottom: 1px solid #dadada;
 }
 .border-ra{border-radius: 8px;}
-
+.textIndent{text-indent: 28px;margin-bottom: 0;margin-top: 10px;}
+.table.table-hover.table-bordered{
+	text-align: center;
+	margin-left: 28px;
+	margin-top: 10px;
+}
+.table.table-hover.table-bordered>thead>tr>th{text-align: center;}
+.mf-20{margin-left: 20px;}
+.deve:hover{text-decoration: none;}
+.main-container{padding: 20px 0;}
