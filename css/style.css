@@ -31,7 +31,7 @@ h3 {
 }
 h4 {
 	font-size: 18px;
-	font-weight: 700;
+	font-weight: 500;
 }
 h5 {
 	font-size: 16px;
@@ -1417,9 +1417,9 @@ a.overlay.small i {
     border-color: transparent;
 }
 .btn.btn-lg {
-    padding: 17px 12px;
+    /*padding: 17px 12px;*/
     font-size: 18px;
-    min-width: 210px;
+    /*min-width: 210px;*/
 }
 .btn-light-gray {
     color: #333333;
