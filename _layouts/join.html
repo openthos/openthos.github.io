@@ -23,11 +23,13 @@
 						<h3>测试资源</h3>
 						<!--<p>OPENTHOS操作系统是一款基于Android 5.1开发的更优化的桌面操作系统，兼具了经典个人电脑操作系统和安卓操作系统的优势，向用户提供更高性能、高安全、高跨平台性的操作体验</p>-->
 						<ul class="list-icons">
-							<li class="object-non-visible" data-animation-effect="fadeInUpSmall"><i class="fa fa-star"></i> 
+							<li class="object-non-visible" data-animation-effect="fadeInUpSmall">
+								<i class="fa fa-star joinI"></i>
 								<a target="_blank" href="http://pan.baidu.com/s/1kVauJ5t">OPENTHOS镜像下载</a> 
 								<span>提取码: y48g</span>
 							</li>
-							<li class="object-non-visible" data-animation-effect="fadeInUpSmall" data-effect-delay="100"><i class="fa fa-star"></i> 
+							<li class="object-non-visible" data-animation-effect="fadeInUpSmall" data-effect-delay="100">
+								<i class="fa fa-star joinI"></i>
 								<a target="_blank" href="https://github.com/openthos/userguide-analysis/blob/master/SUMMARY.md">用户手册</a>
 							</li>
 							
@@ -67,99 +69,47 @@
 				<div class="row">
 					<div class="col-md-12">
 						<p>欢迎加入OPENTHOS应用开发。</p>
-						<h3>openthos下运行android studio等图形应用</h3>
+						<h3>开发与OPENTHOS多窗口环境相容的安卓应用有如下要诀：</h3>
 						
 						<ul class="list-icons">
-							<li class="object-non-visible" data-animation-effect="fadeInUpSmall"><i class="fa fa-star"></i> 
-								<span>准备工作</span>
-								<p class="textIndent">在安装openthos前，多分配一个分区（用于存arch linux文件系统）</p>
-								<p class="textIndent">如果已经安装完openthos，可以u盘启动ubuntu live cd重新增加一个分区，安装和分区可参见<a target="_blank" href="https://github.com/openthos/community-analysis/wiki/%E5%AE%89%E8%A3%85">安装</a></p>
-								<p class="textIndent">用到的分区格式参考如下：</p>
-								<table class="table table-hover table-bordered">
-									<thead>
-										<tr>
-											<th>分区</th>
-											<th>大小</th>
-											<th>文件系统格式</th>
-											<th>用途</th>
-										</tr>
-									</thead>
-									<tbody>
-										<tr>
-											<td>sda1</td>
-											<td>8G</td>
-											<td>FAT32</td>
-											<td>openthos EFI分区</td>
-										</tr>
-										<tr>
-											<td>sda2</td>
-											<td>2G</td>
-											<td>ext4</td>
-											<td>openthos system分区</td>
-										</tr>
-										<tr>
-											<td>sda3</td>
-											<td>40G</td>
-											<td>ext4</td>
-											<td>openthos data 分区</td>
-										</tr>
-										<tr>
-											<td>sda4</td>
-											<td>200G</td>
-											<td>ext4</td>
-											<td>arch linux 系统/数据分区</td>
-										</tr>
-									</tbody>
-								</table>
+							<li class="object-non-visible" data-animation-effect="fadeInUpSmall">
+								<i class="fa fa-star joinI"></i>
+								<span>要诀1：使用正确的上下文</span>
+								<p class="textIndent">使用合适的Context去处理加载资源的行为，尽可能地保证将UI和Activity的Context联系在一起，去更好地处理布局，获取资源等工作</p>
+
 							</li>
-							<li class="object-non-visible" data-animation-effect="fadeInUpSmall" data-effect-delay="100"><i class="fa fa-star"></i>
-								 <span>重新启动系统，进入OPENTHOS</span> 
+							<li class="object-non-visible" data-animation-effect="fadeInUpSmall" data-effect-delay="100">
+								<i class="fa fa-star joinI"></i>
+								 <span>要诀2：正确地处理配置变化</span>
+								<p class="textIndent">当窗口大小进行改变时，Configuration会进行变化，若不对其进行处理会导致整体布局的混乱。另外，若通过系统默认的处理方式会将Activity毁掉并重建，性能损耗较大。若应用能能够自行处理则会大大提高显示效果和用户体验。</p>
+								<p class="textIndent">可能由于窗口缩放造成的变化主要是screenSize，smallestScreenSize， screenLayout和orientation相关的内容。</p>
 							</li>
-							<li class="object-non-visible" data-animation-effect="fadeInUpSmall" data-effect-delay="300"><i class="fa fa-star"></i> 
-								<span>打开终端，格式化为arch 留出的分区,以sda4为例：（sda× ×为你为arch linux所留文件系统分区，此处要记住）</span>
-								<p class="textIndent">su (切换到root用户操作）</p>
-								<p class="textIndent"><code>mkfs.ext2 /dev/block/sda4</code> （格式化预留磁盘，目前openthos工具格式化仅支持ext2，也可以预先格式化为ext4，则后面mount时也改为ext4）</p>
+							<li class="object-non-visible" data-animation-effect="fadeInUpSmall" data-effect-delay="300">
+								<i class="fa fa-star joinI"></i>
+								<span>要诀3：处理所有朝向</span>
+								<p class="textIndent">由于多窗口情况下屏幕朝向会被锁定，因此直接从屏幕的长宽比来获取当前应用所处朝向是不可取的。</p>
+								<p class="textIndent">对横竖屏的理解应该由“屏幕的物理朝向”变为“屏幕的长宽比例”，并充分考虑朝向的灵活变化，平滑地处理UI变化。另外尽量避免直接对屏幕朝向进行锁定的操作。</p>
 								<!--<p class="textIndent"></p>-->
 							</li>
-							<li class="object-non-visible" data-animation-effect="fadeInUpSmall" data-effect-delay="500"><i class="fa fa-star"></i> 
-								<span>在/data/下创建一个挂载点， 将arch linux 分区挂载到本地路径</span>
-								<p class="textIndent"><code>mkdir /data/archlinux</code> (创建一个目录，挂载arch linux盘符）</p>
-								<p class="textIndent"><code>mount -t ext2 /dev/block/sda4 /data/archlinux </code> （将分好的分区挂在到分好的目录下）</p>
-								<p class="textIndent"><code>cd /data/archlinux</code></p>
-								<p class="textIndent">将已经安装配置好的arch linux文件系统拷贝下来。<a href="https://pan.baidu.com/s/1mi2iUW4">拷贝地址</a></p>
-								<p class="textIndent"><code>tar xvf archlinux.tar.gz</code> （解压拷贝过来的压缩包）</p>
+							<li class="object-non-visible" data-animation-effect="fadeInUpSmall" data-effect-delay="500">
+								<i class="fa fa-star joinI"></i>
+								<span>要诀4：针对所有屏幕尺寸构建响应式 UI</span>
+								<p class="textIndent">由于窗口的可缩放性，应用的尺寸不仅局限于显示屏的尺寸，对于任意可能地尺寸和缩放，都应将应用UI的响应做好，保证应用UI能够随着窗口缩放而布局。</p>
+								<p class="textIndent">这样屏幕缩放过程中应用的UI显示表现会好得多，同时也能进一步提高用户体验。</p>
 							</li>
-							<li class="object-non-visible" data-animation-effect="fadeInUpSmall" data-effect-delay="500"><i class="fa fa-star"></i> 
-								<span>将/archlinux/data 下的配置脚本文件、应用拷贝到本地</span>
-								<p class="textIndent"><code>cp arch mount-static prearch /system/bin/</code> （将两个脚本和一个重新编译的mount拷贝到本地）</p>
+							<li class="object-non-visible" data-animation-effect="fadeInUpSmall" data-effect-delay="500">
+								<i class="fa fa-star joinI"></i>
+								<span>要诀5：由其它应用启动的 Activity 必需总是支持多窗口</span>
+								<p class="textIndent">对于OPENTHOS而言，每一个ActivityStack都是一个单独的窗口，想要启动新的窗口就需要新的ActivityStack。在启动需要新窗口的Activity时请格外注意此事。
+									同时新的窗口和原有窗口的连带关系要尽可能地小，以保证用户操作的独立性。</p>
 							</li>
-							<li class="object-non-visible" data-animation-effect="fadeInUpSmall" data-effect-delay="500"><i class="fa fa-star"></i> 
-								<span>修改脚本内容（脚本中指定的路径和权限）</span>
-								<p class="textIndent"><code>cd /system/bin/</code></p>
-								<p class="textIndent"><code>chmod 777 mount-static arch prearch</code> （增加脚本/应用可执行权限）</p>
-								<p class="textIndent">修改prearch脚本第一行，将sda7 改为sda4 ，并将ext4 改为ext2 （修改mount 所挂在盘符和文件系统）</p>
+							<li class="object-non-visible" data-animation-effect="fadeInUpSmall" data-effect-delay="500">
+								<i class="fa fa-star joinI"></i>
+								<span>要诀6：全面地测试</span>
+								<p class="textIndent">由于多窗口带来的更多应用操作，导致测试的内容变得更多，更全面的测试能够帮助您将应用做的更好，也能够帮助我们更好地适配您的应用。</p>
 							</li>
-							<li class="object-non-visible" data-animation-effect="fadeInUpSmall" data-effect-delay="500"><i class="fa fa-star"></i> 
-								<span>运行脚本chroot到 arch linux</span>
-								<p class="textIndent"><code>prearch</code> （mount所有chroot 所需的分区， 创建应用所需文件目录）</p>
-								<p class="textIndent"><code>arch</code> （更改环境变量，chroot）</p>
-							</li>
-							<li class="object-non-visible" data-animation-effect="fadeInUpSmall" data-effect-delay="500"><i class="fa fa-star"></i> 
-								<span>在arch linux上启动图形wayland服务westen</span>
-								<p class="textIndent">openthos 终端下<code>wm size</code>查看下当前分辨率：如结果为1920x1080</p>
-								<p class="textIndent"><code>cd /</code></p>
-								<p class="textIndent"><code>./linuxgui.sh 1920 1080</code></p>
-							</li>
-							<li class="object-non-visible" data-animation-effect="fadeInUpSmall" data-effect-delay="500"><i class="fa fa-star"></i> 
-								<span>切换回openthos桌面，打开应用oto virtual...</span>
-							</li>
-							<li class="object-non-visible" data-animation-effect="fadeInUpSmall" data-effect-delay="500"><i class="fa fa-star"></i> 
-								<span>启动应用进入linux环境， 打开终端，运行/opt下的android studio</span>
-								<p class="textIndent">打开一个终端 <code>cd /opt/android-studio/bin</code></p>
-								<p class="textIndent"><code>./studio.sh</code></p>
-							</li>
+
 						</ul>
-						<i class="fa fa-tip"></i>
 						<!--<a class="btn btn-lg btn-default border-ra" href="#"><i class="fa fa-download pr-10"></i> 点击下载</a>-->
 						<h3 class="title margin-top-clear">开发应用的时候，可以增加适配电脑的特性，例如：</h3>
 						<p class="textIndent">鼠标： 右键弹出菜单等 </p>
@@ -200,7 +150,8 @@
 						<h3>OPENTHOS系统开发</h3>
 						
 						<ul class="list-icons">
-							<li class="object-non-visible" data-animation-effect="fadeInUpSmall"><i class="fa fa-star"></i> 
+							<li class="object-non-visible" data-animation-effect="fadeInUpSmall">
+								<i class="fa fa-star joinI"></i>
 								<span>环境要求</span>
 								<div class="mf-20">
 									<h4>硬件要求</h4>
@@ -217,7 +168,8 @@
 								</div>
 								
 							</li>
-							<li class="object-non-visible" data-animation-effect="fadeInUpSmall" data-effect-delay="100"><i class="fa fa-star"></i>
+							<li class="object-non-visible" data-animation-effect="fadeInUpSmall" data-effect-delay="100">
+								<i class="fa fa-star joinI"></i>
 								 <span>源码下载</span> 
 								 <p class="textIndent">下载 repo 工具</p>
 								 <p class="textIndent"><code>$ PATH=~/bin:$PATH</code></p>
@@ -232,19 +184,19 @@
 								 <p class="textIndent">建立multiwindow开发分支：</p>
 								 <p class="textIndent"><code>$ repo start multiwindow --all</code></p>
 							</li>
-							<li class="object-non-visible" data-animation-effect="fadeInUpSmall" data-effect-delay="500"><i class="fa fa-star"></i> 
+							<li class="object-non-visible" data-animation-effect="fadeInUpSmall" data-effect-delay="500">
+								<i class="fa fa-star joinI"></i>
 								<span>加入开发者微信群</span>
 								<p class="textIndent">如想加入开发用户群请联系微信号openthos</p>
 							</li>
-							<li class="object-non-visible" data-animation-effect="fadeInUpSmall" data-effect-delay="300"><i class="fa fa-star"></i> 
+							<li class="object-non-visible" data-animation-effect="fadeInUpSmall" data-effect-delay="300">
+								<i class="fa fa-star joinI"></i>
 								<span>系统开发详细信息请参考<a href="https://github.com/openthos/openthos/blob/master/doc/%E7%B3%BB%E7%BB%9F%E7%BC%96%E8%AF%91%E5%BC%80%E5%8F%91%E5%85%A5%E9%97%A8.md">文档</a></span>
 							</li>
 						</ul>
-						<i class="fa fa-tip"></i>
 					</div>
 					
 				</div>
-				<hr>
 			</div>
 			<!-- main end -->
 
