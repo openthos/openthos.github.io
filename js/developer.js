@@ -20,7 +20,7 @@
 					} else if ($(".page-top").length>0) {
 						$(".page-top").css("marginTop", (headerHeight)+"px");
 					} else {
-						$("section.main-container").css("marginTop", (headerHeight)+"px");
+						// $("section.main-container").css("marginTop", (headerHeight)+"px");
 					}
 				} else {
 					$("body").removeClass("fixed-header-on");
