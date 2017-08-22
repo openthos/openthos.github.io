@@ -1447,7 +1447,7 @@ a.overlay.small i {
 }
 .image-box {
     /* background-color: #fafafa; */
-    border: 1px solid #f3f3f3;
+    border: 1px solid #e2e2e2;
 }
 
 
@@ -1562,4 +1562,7 @@ a.overlay.small i {
 	background: #e84c3d;
 }
 
-.overlay-container img{background:#E1E1E1;}
+/*.overlay-container img{background:#E1E1E1;}*/
+
+.marB-20{
+	margin-bottom:20px;}
