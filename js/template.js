@@ -446,14 +446,15 @@ $(window).scroll(function(){
 	var targetTop = $(this).scrollTop();
 	var headerTop = $('.header').offset().top;
 	var bannerTop = $("#banner").offset().top;
+	var bannerHeight = $('#banner').height();
 	var height = $(window).height();
-
+	// console.log(targetTop,bannerTop,height,bannerHeight);
 	
 	if(targetTop<=100){
 		subNav_active.removeClass("adv_active");
 	}
 	
-	if (targetTop >= height-bannerTop-70){
+	if (targetTop >= bannerHeight+bannerTop-70){
 		$("#subNav").addClass("fixedSubNav");
 		$(".empty-placeholder").removeClass("hidden");
 	}else{
