@@ -453,7 +453,7 @@ $(window).scroll(function(){
 		subNav_active.removeClass("adv_active");
 	}
 	
-	if (targetTop >= height-bannerTop){
+	if (targetTop >= height-bannerTop-70){
 		$("#subNav").addClass("fixedSubNav");
 		$(".empty-placeholder").removeClass("hidden");
 	}else{
