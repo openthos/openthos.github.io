@@ -14,6 +14,7 @@ body {
 h1,h2,h3,h4,h5,h6 {
 	color: #343434;
 	line-height: 1.2;
+	font-weight:300;
 }
 h1 a,h2 a,h3 a,h4 a,h5 a,h6 a {
 	color: #343434;
@@ -89,7 +90,7 @@ ul {
 .list-icons {
 	list-style: none;
 	padding: 0;
-	margin-top: 12px;
+	/*margin-top: 12px;*/
 	/*padding-left: 42px;*/
 }
 .list-icons li{
@@ -113,7 +114,7 @@ ul {
 	padding-top: 4px;
 }
 .banner {
-	background-color: #f1f1f1;
+	background-color: #6641a9;
 	border-bottom: 1px solid #eaeaea;
 }
 .page-top {
@@ -146,7 +147,7 @@ ul {
 /* Backgrounds
 ---------------------------------- */
 .gray-bg {
-	background-color: #431E85;
+	/*background-color: #431E85;*/
 	-webkit-box-shadow: 0 2px 3px rgba(0, 0, 0, 0.13) !important;
 	box-shadow: 0 2px 3px rgba(0, 0, 0, 0.13) !important;
 	position: relative;
@@ -786,7 +787,7 @@ ul {
 	list-style: none;
 	font-size: 0;
 	padding: 0;
-	margin: 40px 0 20px 0;
+	margin:2px 0 0 20px;
 }
 .social-links li {
 	display: inline-block;
@@ -806,6 +807,8 @@ ul {
 	-webkit-border-radius: 100%;
 	-moz-border-radius: 100%;
 	border-radius: 100%;
+	background: none;
+	color: #807f7f;
 }
 .social-links li a:hover {
 	background-color: transparent;
@@ -878,8 +881,8 @@ ul {
 	color: #e84c3d;
 }
 
-.section.clearfix.object-non-visible.animated.object-visible.fadeInUpSmall:before{content: "";width: 100%;height: 1px;background: #fff;opacity: 0.3;}
-.main-container.gray-bg .main .container .text-center.title, .main-container.gray-bg .main .container,.main-container.gray-bg .main .container h3{color: #fff;}
+.section.clearfix.object-non-visible.animated.object-visible.fadeInUpSmall:before{content: "";width: 100%;height: 2px;background: #7d2798;opacity: 0.3;}
+/*.main-container.gray-bg .main .container .text-center.title, .main-container.gray-bg .main .container,.main-container.gray-bg .main .container h2{color: #fff;}*/
 #high-performance1 img{display: none;}
 #high-performance1 img.active{display: block;}
 .tab-pane.fade{    
@@ -981,10 +984,6 @@ ul {
 #subNav{display: none;}
 }
 
-
-.main-container.gray-bg .main .container .text-center.title, .main-container.gray-bg .main .container, .main-container.gray-bg .main .container h3 {
-    color: #fff;
-}
 
 
 /*愿景*/
@@ -1566,3 +1565,113 @@ a.overlay.small i {
 
 .marB-20{
 	margin-bottom:20px;}
+
+
+.no-touch .light-translucent-bg,
+.no-touch .dark-translucent-bg,
+.no-touch .default-translucent-bg,
+.no-touch .parallax {
+	background-attachment: fixed !important;
+}
+.light-translucent-bg,
+.dark-translucent-bg,
+.default-translucent-bg,
+.parallax {
+	-webkit-background-size: cover!important;
+	-moz-background-size: cover!important;
+	-o-background-size: cover!important;
+	background-size: cover!important;
+}
+.parallax {
+	background-position: 50% 0;
+	background-repeat: no-repeat;
+	z-index: 1;
+	position: relative;
+	padding: 50px 0;
+	padding-bottom: 20px;
+}
+.light-translucent-bg,
+.dark-translucent-bg,
+.default-translucent-bg {
+	background-position: 50% 0;
+	background-repeat: no-repeat;
+	z-index: 1;
+	position: relative;
+}
+.light-translucent-bg:after,
+.dark-translucent-bg:after,
+.default-translucent-bg:after {
+	content: "";
+	position: absolute;
+	top: 0;
+	left: 0;
+	z-index: 2;
+	width: 100%;
+	height: 100%;
+}
+.light-translucent-bg {
+	color: #333;
+	border-bottom: 1px solid #dadada;
+	border-top: 1px solid #dadada;
+}
+.header + .banner > .light-translucent-bg { border-top: none; }
+
+.slider-banner-container .light-translucent-bg {
+	border: none;
+}
+.light-translucent-bg .separator-2 {
+	background-color: #333;
+}
+.light-translucent-bg:after {
+	background-color: rgba(255, 255, 255, 0.7);
+}
+.dark-translucent-bg:after {
+	background-color: rgba(102, 65, 169, 0.7);
+}
+.dark-translucent-bg,
+.dark-translucent-bg h1,
+.dark-translucent-bg h2,
+.dark-translucent-bg h3,
+.dark-translucent-bg h4,
+.dark-translucent-bg h5,
+.dark-translucent-bg h6 {
+	color: #ffffff;
+}
+.dark-translucent-bg a:not(.btn) {
+	text-decoration: underline;
+	color: #ffffff;
+}
+.dark-translucent-bg a:not(.btn):hover {
+	text-decoration: none;
+	color: #ffffff;
+}
+.default-translucent-bg:after {
+	background-color: rgba(232, 76, 61, 0.7);
+}
+.default-translucent-bg,
+.default-translucent-bg h1,
+.default-translucent-bg h2,
+.default-translucent-bg h3,
+.default-translucent-bg h4,
+.default-translucent-bg h5,
+.default-translucent-bg h6 {
+	color: #ffffff;
+}
+.default-translucent-bg a:not(.btn) {
+	text-decoration: underline;
+	color: #ffffff;
+}
+.default-translucent-bg a:not(.btn):hover {
+	text-decoration: none;
+	color: #ffffff;
+}
+.light-translucent-bg .container,
+.dark-translucent-bg .container,
+.default-translucent-bg .container {
+	z-index: 3;
+	position: relative;
+}
+.parallax-bg-3 {
+	background: url("../images/parallax-bg-3.jpg") 50% 0px no-repeat;
+}
+
