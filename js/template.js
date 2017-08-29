@@ -51,7 +51,7 @@
 			$('.slider-banner-container .slider-banner').show().revolution({
 				delay:3000,
 				startwidth:1140,
-				startheight:570,
+				startheight:520,
 				
 				navigationArrows:"solo",
 				
