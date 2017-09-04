@@ -1673,9 +1673,9 @@ a.overlay.small i {
 	z-index: 3;
 	position: relative;
 }
-.parallax-bg-3 {
-	background: url("../images/parallax-bg-3.jpg") 50% 0px no-repeat;
-}
+/*.parallax-bg-3 {*/
+	/*background: url("../images/parallax-bg-3.jpg") 50% 0px no-repeat;*/
+/*}*/
 .tp-caption.large {
 	font-size: 36px;
 	padding: 0px 15px;
@@ -1689,16 +1689,45 @@ a.overlay.small i {
 	padding: 5px;
 }
 .whiteColor{color: #fff;}
-@media (max-width:767px){
-	#imgFa{
-		top: 34px !important;
-		left: 213px !important;
-	}
-	#bannerImg{
-		width: 183px !important;
-		height: 140px !important;
-	}
-	.medium{
-		font-size: 10px !important;
+.bannerText{color: #fff;
+
+
+}
+/* Medium desktop devices and tablets */
+@media (min-width:768px) and (max-width:1199px) {
+	.main-navigation .container-fluid {
+		padding-right: 0px;
+		padding-left: 0px;
 	}
 }
+
+/* Medium devices (tablets landscape to portrait) */
+@media (min-width:768px) and (max-width:991px) {
+	.bannerText{color: #fff;
+		font-size: 1.6rem;
+		padding-top:0;
+		line-height:26px;
+	}
+}
+
+/* Medium devices (desktops, tablets, 992px and up) */
+@media (min-width:1361px) {
+	.bannerText{padding-top:30%;font-size: 2rem;line-height:40px;}
+}
+
+/* Medium desktop devices */
+@media (min-width:992px) and (max-width:1199px) {
+	.bannerText{
+		padding-top:0;
+		font-size: 2rem;
+		line-height:40px;}
+}
+
+/* Large devices (Large desktops 1200px and up) */
+@media (min-width:1200px) and (max-width:1360px) {
+	.bannerText{
+		padding-top:23%;
+		font-size: 2rem;
+		line-height:40px;}
+}
+
