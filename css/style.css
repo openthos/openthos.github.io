@@ -1698,4 +1698,7 @@ a.overlay.small i {
 		width: 183px !important;
 		height: 140px !important;
 	}
+	.medium{
+		font-size: 10px !important;
+	}
 }
