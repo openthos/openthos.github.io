@@ -1693,11 +1693,29 @@ a.overlay.small i {
 
 
 }
-/* Medium desktop devices and tablets */
-@media (min-width:768px) and (max-width:1199px) {
-	.main-navigation .container-fluid {
-		padding-right: 0px;
-		padding-left: 0px;
+
+
+@media(max-width:768px){
+	.bannerText{
+		font-size: 1rem;
+		line-height: 17px;
+		padding-top: 8%;
+		margin-bottom: 0;
+	}
+	.cloud_imgs{
+		width:50px;
+		height:51px;
+	}
+	.box-style-1 h2{
+		font-size:16px;
+	}
+}
+
+@media(max-width: 320px){
+	.bannerText{
+		line-height: 14px;
+		font-size: 0.6rem;
+		padding: 0;
 	}
 }
 
@@ -1708,11 +1726,6 @@ a.overlay.small i {
 		padding-top:0;
 		line-height:26px;
 	}
-}
-
-/* Medium devices (desktops, tablets, 992px and up) */
-@media (min-width:1361px) {
-	.bannerText{padding-top:30%;font-size: 2rem;line-height:40px;}
 }
 
 /* Medium desktop devices */
@@ -1730,4 +1743,9 @@ a.overlay.small i {
 		font-size: 2rem;
 		line-height:40px;}
 }
+/* Medium devices (desktops, tablets, 992px and up) */
+@media (min-width:1361px) {
+	.bannerText{padding-top:30%;font-size: 2rem;line-height:40px;}
+}
+
 
