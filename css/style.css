@@ -1699,11 +1699,8 @@ a.overlay.small i {
 	padding: 5px;
 }
 .whiteColor{color: #fff;}
-.bannerText{color: #fff;
-
-
-}
-
+.bannerText{color: #fff;  }
+.yuanjingImg{border: 1px solid #e2e2e2;margin-bottom: 20px;}
 
 @media(max-width:768px){
 	.bannerText{
@@ -1722,6 +1719,10 @@ a.overlay.small i {
 	}
 	.box-style-1 h2{
 		font-size:16px;
+	}
+	.yuanjingImg{
+		width:80%;
+		margin:10px auto;
 	}
 }
 
@@ -1761,5 +1762,6 @@ a.overlay.small i {
 @media (min-width:1361px) {
 	.bannerText{padding-top:50%;font-size: 2rem;line-height:40px;}
 }
+
 
 
