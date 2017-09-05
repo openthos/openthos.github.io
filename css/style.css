@@ -1737,7 +1737,7 @@ a.overlay.small i {
 @media (min-width:768px) and (max-width:991px) {
 	.bannerText{color: #fff;
 		font-size: 1.6rem;
-		padding-top:0;
+		padding-top:28%;
 		line-height:26px;
 	}
 }
@@ -1745,21 +1745,21 @@ a.overlay.small i {
 /* Medium desktop devices */
 @media (min-width:992px) and (max-width:1199px) {
 	.bannerText{
-		padding-top:0;
+		padding-top:28%;
 		font-size: 2rem;
-		line-height:40px;}
+		line-height:32px;}
 }
 
 /* Large devices (Large desktops 1200px and up) */
 @media (min-width:1200px) and (max-width:1360px) {
 	.bannerText{
-		padding-top:23%;
+		padding-top:37%;
 		font-size: 2rem;
 		line-height:40px;}
 }
 /* Medium devices (desktops, tablets, 992px and up) */
 @media (min-width:1361px) {
-	.bannerText{padding-top:30%;font-size: 2rem;line-height:40px;}
+	.bannerText{padding-top:50%;font-size: 2rem;line-height:40px;}
 }
 
 
