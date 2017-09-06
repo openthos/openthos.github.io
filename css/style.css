@@ -958,13 +958,6 @@ hr{
 	}
 }
 
-/* Slider Revolution
----------------------------------- */
-.slider-banner-container {
-	width: 100%;
-	position: relative;
-	padding: 0;
-}
 
 /* Slider Revolution captions */
 .tp-caption {
@@ -1125,6 +1118,41 @@ hr{
 	position: relative;
 	padding: 0;
 }
+.slider-banner-container{
+	height:232px;
+}
+.slider-banner{
+	height:232px !important;
+	max-height:232px !important;
+}
+@media(min-width: 480px){
+	.slider-banner-container{
+		height:420px;
+	}
+	.slider-banner{
+		height:420px !important;
+		max-height:420px !important;
+	}
+}
+@media(min-width: 768px){
+	.slider-banner-container{
+		height:485px;
+	}
+	.slider-banner{
+		height:485px !important;
+		max-height:485px !important;
+	}
+}
+@media(min-width: 961px){
+	.slider-banner-container{
+		height:635px;
+	}
+	.slider-banner{
+		height:635px !important;
+		max-height:635px !important;
+	}
+}
+
 .slider-banner-fullscreen {
 	width: 100%;
 	position: relative;
@@ -1790,9 +1818,6 @@ a.overlay.small i {
 	.descri{
 		font-size: 20px;
 	}
-	/*#logo img{*/
-		/*width:auto;*/
-	/*}*/
 }
 
 /* Medium desktop devices */
