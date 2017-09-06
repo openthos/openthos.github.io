@@ -1841,6 +1841,9 @@ a.overlay.small i {
 		width:auto;
 	}
 }
+.tp-bgimg.defaultimg{
+	-webkit-background-position:center center !important;
+	background-position:center center !important;}
 
 
 
