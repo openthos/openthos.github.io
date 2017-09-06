@@ -1,22 +1,8 @@
 <header class="header fixed clearfix">
 	<div class="container">
 		<div class="row">
-			<div class="col-md-3 ">
 
-				<!-- header-left start -->
-				<!-- ================ -->
-				<div class="header-left clearfix">
-
-					<!-- logo -->
-					<div class="logo text-center">
-						<a href="/"><img id="logo" src="../images/logo.png"></a>
-					</div>
-
-				</div>
-				<!-- header-left end -->
-
-			</div>
-			<div class="col-md-9">
+			<div class="col-md-9 col-md-offset-3">
 
 				<!-- header-right start -->
 				<!-- ================ -->
@@ -44,9 +30,11 @@
 								<!-- Collect the nav links, forms, and other content for toggling -->
 								<div class="collapse navbar-collapse" id="navbar-collapse-1">
 									<ul class="nav navbar-nav navbar-right">
+										{% if page.mark != 'other' %}
 										<li class="dropdown {% if page.number == 1 %}active{%endif%}">
 											<a href="/" >首&nbsp;页</a>
 										</li>
+										{%endif%}
 										<!-- mega-menu start -->
 										<li class="dropdown mega-menu {% if page.number == 2 %}active{%endif%}">
 											<a href="join.html">
