@@ -1709,6 +1709,7 @@ a.overlay.small i {
 .tp-caption.medium {
 	font-size: 22px;
 	padding: 2px 10px;
+	color: #000 !important;
 }
 .tp-caption.small {
 	font-size: 14px;
