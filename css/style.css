@@ -1751,6 +1751,10 @@ a.overlay.small i {
 	.descri{
 		font-size: 12px;
 	}
+	.tp-caption.medium {
+		font-size: 12px !important;
+
+	}
 }
 
 @media(max-width: 360px){
