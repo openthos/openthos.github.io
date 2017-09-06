@@ -112,6 +112,9 @@ ul {
 	border-bottom: 1px solid #eaeaea;
 	background-color: #fff;
 	padding-top: 4px;
+
+}
+.posiHead{
 	position: absolute;
 	width: 100%;
 	opacity: 0.7;
@@ -1726,16 +1729,6 @@ a.overlay.small i {
 
 
 @media(max-width:768px){
-	.bannerText{
-		font-size: 1.3rem;
-		line-height: 17px;
-		padding-top: 1%;
-		width: 80%;
-		text-align: center;
-		margin: auto;
-		padding-bottom: 14px;
-		margin-bottom: 0;
-	}
 	.cloud_imgs{
 		width:50px;
 		height:51px;
