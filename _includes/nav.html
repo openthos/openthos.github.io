@@ -1,8 +1,23 @@
 <header class="header fixed clearfix">
 	<div class="container">
 		<div class="row">
+			{% if page.mark != 'other' %}
+			<div class="col-md-3 ">
 
-			<div class="col-md-9 col-md-offset-3">
+				<!-- header-left start -->
+				<!-- ================ -->
+				<div class="header-left clearfix">
+
+					<!-- logo -->
+					<div class="logo text-center">
+						<a href="/"><img id="logo" src="../images/logo.png"></a>
+					</div>
+
+				</div>
+				<!-- header-left end -->
+			</div>
+			{%endif%}
+			<div class="col-md-9 {% if page.mark == 'other' %}col-md-offset-3{%endif%}">
 
 				<!-- header-right start -->
 				<!-- ================ -->
