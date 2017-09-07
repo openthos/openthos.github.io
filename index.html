@@ -1,82 +1,136 @@
-			{%include head.html%}
-			{%include nav.html%}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<title>OPENTHOS</title>
+	<meta name="description" content="iDea a Bootstrap-based, Responsive HTML5 Template">
+	<meta name="author" content="htmlcoder.me">
+
+	<!-- Mobile Meta -->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<!-- Favicon -->
+	<link rel="shortcut icon" href="images/favicon.ico">
+
+
+
+	<!-- Bootstrap core CSS -->
+	<link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+	<!-- Font Awesome CSS -->
+	<link href="fonts/font-awesome/css/font-awesome.css" rel="stylesheet">
+
+	<!-- Fontello CSS -->
+	<link href="fonts/fontello/css/fontello.css" rel="stylesheet">
+
+	<!-- Plugins -->
+	<link href="plugins/rs-plugin/css/settings.css" media="screen" rel="stylesheet">
+	<link href="plugins/rs-plugin/css/extralayers.css" media="screen" rel="stylesheet">
+	<link href="plugins/magnific-popup/magnific-popup.css" rel="stylesheet">
+	<link href="css/animations.css" rel="stylesheet">
+	<link href="plugins/owl-carousel/owl.carousel.css" rel="stylesheet">
+
+	<!-- iDea core CSS file -->
+	<link href="css/style.css" rel="stylesheet">
+
+	<!-- Color Scheme (In order to change the color scheme, replace the red.css with the color scheme that you prefer)-->
+	<link href="css/skins/purple.css" rel="stylesheet">
+
+	<!-�C[if lt IE 9]-->
+	<script type="text/javascript"  src="js/html5shiv.js"></script >
+	<script type="text/javascript" src="js/selectivizr.js"></script>
+	<!--[endif]�C- >
+
+</head>
+
+<!-- body classes:
+        "boxed": boxed layout mode e.g. <body class="boxed">
+        "pattern-1 ... pattern-9": background patterns for boxed layout mode e.g. <body class="boxed pattern-1">
+-->
+<body class="front">
+<!-- scrollToTop -->
+<!-- ================ -->
+<div class="scrollToTop"><i class="icon-up-open-big"></i></div>
+
+<!-- page wrapper start -->
+<!-- ================ -->
+<div class="page-wrapper">
+
+			<!-- header start (remove fixed class from header in order to disable fixed navigation mode) -->
+			<!-- ================ -->
+			<header class="header fixed clearfix">
+				<div class="container">
+					<div class="row">
+						<div class="col-md-9 col-md-offset-3">
+
+							<!-- header-right start -->
+							<!-- ================ -->
+							<div class="header-right clearfix">
+
+								<!-- main-navigation start -->
+								<!-- ================ -->
+								<div class="main-navigation animated">
+
+									<!-- navbar start -->
+									<!-- ================ -->
+									<nav class="navbar navbar-default" role="navigation">
+										<div class="container-fluid">
+
+											<!-- Toggle get grouped for better mobile display -->
+											<div class="navbar-header">
+												<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-collapse-1">
+													<span class="sr-only">Toggle navigation</span>
+													<span class="icon-bar"></span>
+													<span class="icon-bar"></span>
+													<span class="icon-bar"></span>
+												</button>
+											</div>
+
+											<!-- Collect the nav links, forms, and other content for toggling -->
+											<div class="collapse navbar-collapse" id="navbar-collapse-1">
+												<ul class="nav navbar-nav navbar-right">
+													<!-- mega-menu start -->
+													<li class="dropdown mega-menu">
+														<a href="join.html">
+															加入OPENTHOS
+														</a>
+													</li>
+													<!-- mega-menu end -->
+													<li class="dropdown ">
+														<a href="about.html">关于我们</a>
+													</li>
+													<li class="dropdown">
+														<ul class="social-links circle">
+															<li class="facebook"><a href="###"><i class="fa fa-weibo"></i></a></li>
+															<li class="twitter"><a href="###"><i class="fa fa-weixin"></i></a></li>
+															<li class="googleplus"><a href="###"><i class="fa fa-github"></i></a></li>
+															<li class="skype"><a href="###"><i class="fa fa-envelope"></i></a></li>
+														</ul>
+													</li>
+												</ul>
+											</div>
+
+										</div>
+									</nav>
+									<!-- navbar end -->
+
+								</div>
+								<!-- main-navigation end -->
+
+							</div>
+							<!-- header-right end -->
+
+						</div>
+					</div>
+				</div>
+			</header>
+			<!-- header end -->
 
 			<div class="banner" id="banner">
 
 				<!-- slideshow start -->
 				<!-- ================ -->
 				<div class="slideshow">
-
-					<!--<header class="header fixed clearfix posiHead">-->
-						<!--<div class="container">-->
-							<!--<div class="row">-->
-								<!--<div class="col-md-8 col-md-offset-1">-->
-
-									<!--&lt;!&ndash; header-right start &ndash;&gt;-->
-									<!--&lt;!&ndash; ================ &ndash;&gt;-->
-									<!--<div class="header-right clearfix">-->
-
-										<!--&lt;!&ndash; main-navigation start &ndash;&gt;-->
-										<!--&lt;!&ndash; ================ &ndash;&gt;-->
-										<!--<div class="main-navigation animated">-->
-
-											<!--&lt;!&ndash; navbar start &ndash;&gt;-->
-											<!--&lt;!&ndash; ================ &ndash;&gt;-->
-											<!--<nav class="navbar navbar-default" role="navigation">-->
-												<!--<div class="container-fluid">-->
-
-													<!--&lt;!&ndash; Toggle get grouped for better mobile display &ndash;&gt;-->
-													<!--<div class="navbar-header">-->
-														<!--<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-collapse-1">-->
-															<!--<span class="sr-only">Toggle navigation</span>-->
-															<!--<span class="icon-bar"></span>-->
-															<!--<span class="icon-bar"></span>-->
-															<!--<span class="icon-bar"></span>-->
-														<!--</button>-->
-													<!--</div>-->
-
-													<!--&lt;!&ndash; Collect the nav links, forms, and other content for toggling &ndash;&gt;-->
-													<!--<div class="collapse navbar-collapse" id="navbar-collapse-1">-->
-														<!--<ul class="nav navbar-nav navbar-right">-->
-															<!--<li class="dropdown {% if page.number == 1 %}active{%endif%}">-->
-																<!--<a href="/" >首&nbsp;页</a>-->
-															<!--</li>-->
-															<!--&lt;!&ndash; mega-menu start &ndash;&gt;-->
-															<!--<li class="dropdown mega-menu {% if page.number == 2 %}active{%endif%}">-->
-																<!--<a href="join.html">-->
-																	<!--加入OPENTHOS-->
-																<!--</a>-->
-															<!--</li>-->
-															<!--&lt;!&ndash; mega-menu end &ndash;&gt;-->
-															<!--<li class="dropdown {% if page.number == 3 %}active{%endif%}">-->
-																<!--<a href="about.html">关于我们</a>-->
-															<!--</li>-->
-															<!--<li class="dropdown">-->
-																<!--<ul class="social-links circle">-->
-																	<!--<li class="facebook"><a href="###"><i class="fa fa-weibo"></i></a></li>-->
-																	<!--<li class="twitter"><a href="###"><i class="fa fa-weixin"></i></a></li>-->
-																	<!--<li class="googleplus"><a href="###"><i class="fa fa-github"></i></a></li>-->
-																	<!--<li class="skype"><a href="###"><i class="fa fa-envelope"></i></a></li>-->
-																<!--</ul>-->
-															<!--</li>-->
-														<!--</ul>-->
-													<!--</div>-->
-
-												<!--</div>-->
-											<!--</nav>-->
-											<!--&lt;!&ndash; navbar end &ndash;&gt;-->
-
-										<!--</div>-->
-										<!--&lt;!&ndash; main-navigation end &ndash;&gt;-->
-
-									<!--</div>-->
-									<!--&lt;!&ndash; header-right end &ndash;&gt;-->
-
-								<!--</div>-->
-							<!--</div>-->
-						<!--</div>-->
-					<!--</header>-->
-					<!-- header end -->
 
 					<!-- slider revolution start -->
 					<!-- ================ -->
@@ -87,7 +141,7 @@
 								<li data-transition="random" data-slotamount="7" data-masterspeed="500" data-saveperformance="on" data-title="Powerful Bootstrap Theme">
 
 									<!-- main image -->
-									<img src="../images/banner2.jpg"  alt="slidebg1" data-bgposition="center top" data-bgfit="cover" data-bgrepeat="no-repeat">
+									<img src="images/banner2.jpg"  alt="slidebg1" data-bgposition="center top" data-bgfit="cover" data-bgrepeat="no-repeat">
 
 									<!-- LAYER NR. 1 -->
 									<div class="tp-caption sfr tp-resizeme"
@@ -95,7 +149,7 @@
 										 data-y="90"
 										 data-speed="600"
 										 data-start="2000">
-										<img src="../images/logo.png" alt="">
+										<img src="images/logo.png" alt="">
 									</div>
 
 									<!-- LAYER NR. 3 -->
@@ -190,7 +244,7 @@
 											<h2 class="space-bottom">多窗口、多任务</h2>
 											<div class="col-md-12">
 
-												<img src="../images/img1.png" alt="">
+												<img src="images/img1.png" alt="">
 												<div class="space hidden-md hidden-lg"></div>
 											</div>
 										</div>
@@ -209,7 +263,7 @@
 											<!--</div>-->
 											<h2 class="space-bottom">为桌面化开发核心应用</h2>
 											<div class="col-md-12">
-												<img src="../images/img2.png" alt="">
+												<img src="images/img2.png" alt="">
 												<div class="space hidden-md hidden-lg"></div>
 											</div>
 										</div>
@@ -229,7 +283,7 @@
 											<!--</div>-->
 											<div class="col-md-12">
 
-												<img src="../images/img3.png" alt="">
+												<img src="images/img3.png" alt="">
 												<div class="space hidden-md hidden-lg"></div>
 											</div>
 										</div>
@@ -282,8 +336,8 @@
 
 							<h3 class="marB-20">用户应用防护</h3>
 							<!--<div class="separator-2"></div>-->
-							<div class="" style="background:url('../images/bg.png')">
-								<img src="../images/defent.png" alt="">
+							<div class="" style="background:url('images/bg.png')">
+								<img src="images/defent.png" alt="">
 							</div>
 
 						</div>
@@ -343,16 +397,16 @@
 						<div class="col-md-12">
 							<h3 style="margin-bottom: 40px;">跨硬件架构的统一用户体验</h3>
 							<div class="col-md-3 col-sm-3 col-xs-6" >
-								<img class="yuanjingImg"  src="../images/intel.png" alt="">
+								<img class="yuanjingImg"  src="images/intel.png" alt="">
 							</div>
 							<div class="col-md-3 col-sm-3 col-xs-6">
-								<img class="yuanjingImg" src="../images/shenwei.jpg" alt="">
+								<img class="yuanjingImg" src="images/shenwei.jpg" alt="">
 							</div>
 							<div class="col-md-3 col-sm-3 col-xs-6">
-								<img class="yuanjingImg" src="../images/loongson.jpg" alt="">
+								<img class="yuanjingImg" src="images/loongson.jpg" alt="">
 							</div>
 							<div class="col-md-3 col-sm-3 col-xs-6">
-								<img class="yuanjingImg" src="../images/ft.jpg" alt="">
+								<img class="yuanjingImg" src="images/ft.jpg" alt="">
 							</div>
 						</div>
 					</div>
@@ -360,16 +414,16 @@
 						<div class="col-md-12">
 							<h3 style="margin-bottom: 40px;">OPENTHOS CLOUD实现所有设备上数据与应用环境的实时一致 </h3>
 							<div class="col-md-3 col-sm-3 col-xs-6">
-								<img class="yuanjingImg"  src="../images/world2.png" alt="">
+								<img class="yuanjingImg"  src="images/world2.png" alt="">
 							</div>
 							<div class="col-md-3 col-sm-3 col-xs-6">
-								<img class="yuanjingImg" src="../images/world1.png" alt="">
+								<img class="yuanjingImg" src="images/world1.png" alt="">
 							</div>
 							<div class="col-md-3 col-sm-3 col-xs-6">
-								<img class="yuanjingImg" src="../images/world5.png" alt="">
+								<img class="yuanjingImg" src="images/world5.png" alt="">
 							</div>
 							<div class="col-md-3 col-sm-3 col-xs-6" >
-								<img class="yuanjingImg" src="../images/world4.png" alt="">
+								<img class="yuanjingImg" src="images/world4.png" alt="">
 							</div>
 						</div>
 					</div>
@@ -379,13 +433,13 @@
 						<div class="col-md-12" >
 							<h3 style="margin-bottom: 40px;">实现完全自主可控</h3>
 							<div class="col-md-4 col-sm-4 col-xs-4 object-non-visible" style="margin-left: -2%;" data-animation-effect="fadeInRight" data-effect-delay="100">
-								<img src="../images/yuan11.png" alt="">
+								<img src="images/yuan11.png" alt="">
 							</div>
 							<div class="col-md-4 col-sm-4 col-xs-4 object-non-visible" data-animation-effect="fadeInRight" data-effect-delay="200">
-								<img src="../images/yuan22.png" alt="">
+								<img src="images/yuan22.png" alt="">
 							</div>
 							<div class="col-md-4 col-sm-4 col-xs-4 object-non-visible" data-animation-effect="fadeInRight" data-effect-delay="300">
-								<img src="../images/yuan33.png" alt="">
+								<img src="images/yuan33.png" alt="">
 							</div>
 						</div>
 					</div>
@@ -396,6 +450,97 @@
 			</div>
 			<!-- section end -->
 
-			{%include footer.html%}
+	<!-- footer start (Add "light" class to #footer in order to enable light footer) -->
+	<!-- ================ -->
+	<footer id="footer">
+
+		<!-- .footer start -->
+		<!-- ================ -->
+		<div class="footer">
+			<div class="container">
+				<div class="row">
+					<div class="footer-content">
+						<div class="col-md-8 col-md-offset-4 col-sm-8 col-sm-offset-4 col-xs-8 col-xs-offset-2">
+							<p style="margin-bottom: 0;">联系我们</p>
+							<ul class="list-icons">
+								<li><i class="fa fa-map-marker pr-10"></i> 北京市海淀区清华大学FIT楼3-124</li>
+								<li><i class="fa fa-envelope-o pr-10"></i>  team@openthos.org</li>
+							</ul>
+						</div>
+						<!--<div class="col-md-4 col-sm-6 col-xs-12 foot_links">
+                            <div class="footer-content">
+                                <h2>链接</h2>
+                                <nav>
+                                    <ul class="nav nav-pills nav-stacked">
+                                        <li><a href="index.html">首页</a></li>
+                                        <li class="active"><a href="join.html">参与项目</a></li>
+                                        <li><a href="about.html">关于我们</a></li>
+                                    </ul>
+                                </nav>
+                            </div>
+                        </div>-->
+					</div>
+
+				</div>
+			</div>
+		</div>
+		<!-- .footer end -->
+
+		<!-- .subfooter start -->
+		<!-- ================ -->
+		<div class="subfooter">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-12">
+						<p>Copyright (c) 2017  openthos实验室. All Rights Reserved</p>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- .subfooter end -->
+
+	</footer>
+	<!-- footer end -->
+</div>
+<!-- page-wrapper end -->
+
+<!-- JavaScript files placed at the end of the document so the pages load faster
+================================================== -->
+<!-- Jquery and Bootstap core js files -->
+<script type="text/javascript" src="plugins/jquery.min.js"></script>
+<script type="text/javascript" src="bootstrap/js/bootstrap.min.js"></script>
+
+<!-- Modernizr javascript -->
+<script type="text/javascript" src="plugins/modernizr.js"></script>
+
+<!-- jQuery REVOLUTION Slider  -->
+<script type="text/javascript" src="plugins/rs-plugin/js/jquery.themepunch.tools.min.js"></script>
+<script type="text/javascript" src="plugins/rs-plugin/js/jquery.themepunch.revolution.min.js"></script>
+
+<!-- Isotope javascript -->
+<script type="text/javascript" src="plugins/isotope/isotope.pkgd.min.js"></script>
+
+<!-- Owl carousel javascript -->
+<script type="text/javascript" src="plugins/owl-carousel/owl.carousel.js"></script>
+
+<!-- Magnific Popup javascript -->
+<script type="text/javascript" src="plugins/magnific-popup/jquery.magnific-popup.min.js"></script>
+
+<!-- Appear javascript -->
+<script type="text/javascript" src="plugins/jquery.appear.js"></script>
+
+<!-- Count To javascript -->
+<script type="text/javascript" src="plugins/jquery.countTo.js"></script>
+
+<!-- Parallax javascript -->
+<script src="plugins/jquery.parallax-1.1.3.js"></script>
+
+<!-- Initialization of Plugins -->
+<script type="text/javascript" src="js/template.js"></script>
+
+
+</body>
+</html>
+
 
 		
