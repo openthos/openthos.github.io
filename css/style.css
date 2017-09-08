@@ -1792,22 +1792,7 @@ a.overlay.small i {
 	}
 }
 
-@media(max-width: 360px){
-	.bannerText{
-		line-height: 14px;
-		font-size: 0.6rem;
-		padding-bottom: 14px;
-	}
-	#logo{
-		position: absolute;
-		z-index: 12;
-		bottom:-13px;
-		width:auto;
-	}
-	.descri{
-		font-size: 12px;
-	}
-}
+
 
 @media(max-width: 480px){
 	.nav li.fourLinks{display: none;}
@@ -1827,6 +1812,28 @@ a.overlay.small i {
 		width:100%;
 	}
 	.logoHid{display: none;}
+	.firstLi{
+		margin-left:16px;}
+
+}
+
+@media(max-width: 360px){
+	.bannerText{
+		line-height: 14px;
+		font-size: 0.6rem;
+		padding-bottom: 14px;
+	}
+	#logo{
+		position: absolute;
+		z-index: 12;
+		bottom:-13px;
+		width:auto;
+	}
+	.descri{
+		font-size: 12px;
+	}
+	.firstLi{
+		margin-left:0;}
 }
 @media(max-width: 320px){
 	.navbar-default .navbar-nav > li > a.idnexNavA1,
