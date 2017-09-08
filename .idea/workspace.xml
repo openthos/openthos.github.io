@@ -2,9 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="62462841-033b-4787-85c7-88a89364a572" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/about.html" afterPath="$PROJECT_DIR$/about.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/css/style.css" afterPath="$PROJECT_DIR$/css/style.css" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/index.html" afterPath="$PROJECT_DIR$/index.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/join.html" afterPath="$PROJECT_DIR$/join.html" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -25,18 +26,18 @@
       <file leaf-file-name="style.css" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/css/style.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="497">
-              <caret line="1872" column="42" lean-forward="false" selection-start-line="1872" selection-start-column="42" selection-end-line="1872" selection-end-column="42" />
+            <state relative-caret-position="382">
+              <caret line="1749" column="8" lean-forward="true" selection-start-line="1749" selection-start-column="8" selection-end-line="1749" selection-end-column="8" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="index.html" pinned="false" current-in-tab="true">
+      <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="149">
-              <caret line="65" column="53" lean-forward="true" selection-start-line="65" selection-start-column="53" selection-end-line="65" selection-end-column="53" />
+            <state relative-caret-position="439">
+              <caret line="90" column="21" lean-forward="true" selection-start-line="61" selection-start-column="12" selection-end-line="90" selection-end-column="21" />
               <folding />
             </state>
           </provider>
@@ -45,18 +46,18 @@
       <file leaf-file-name="join.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/join.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="3401">
-              <caret line="179" column="107" lean-forward="false" selection-start-line="179" selection-start-column="107" selection-end-line="179" selection-end-column="107" />
+            <state relative-caret-position="589">
+              <caret line="95" column="13" lean-forward="true" selection-start-line="63" selection-start-column="4" selection-end-line="95" selection-end-column="13" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="about.html" pinned="false" current-in-tab="false">
+      <file leaf-file-name="about.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/about.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="611">
-              <caret line="212" column="14" lean-forward="true" selection-start-line="212" selection-start-column="14" selection-end-line="212" selection-end-column="14" />
+            <state relative-caret-position="228">
+              <caret line="74" column="51" lean-forward="false" selection-start-line="74" selection-start-column="51" selection-end-line="74" selection-end-column="51" />
               <folding />
             </state>
           </provider>
@@ -74,8 +75,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>OPENTHOS操作系统</find>
-      <find>text-center1</find>
       <find>我们的愿景</find>
       <find>基于</find>
       <find>separator</find>
@@ -103,6 +102,8 @@
       <find>/images</find>
       <find>../</find>
       <find>blog</find>
+      <find>min-height</find>
+      <find>important</find>
       <find>navbar-header</find>
     </findStrings>
   </component>
@@ -124,9 +125,10 @@
         <option value="$PROJECT_DIR$/_layouts/home.html" />
         <option value="$PROJECT_DIR$/_layouts/join.html" />
         <option value="$PROJECT_DIR$/_layouts/about.html" />
-        <option value="$PROJECT_DIR$/about.html" />
-        <option value="$PROJECT_DIR$/css/style.css" />
         <option value="$PROJECT_DIR$/index.html" />
+        <option value="$PROJECT_DIR$/css/style.css" />
+        <option value="$PROJECT_DIR$/join.html" />
+        <option value="$PROJECT_DIR$/about.html" />
       </list>
     </option>
   </component>
@@ -280,12 +282,12 @@
       <workItem from="1504660473591" duration="21220000" />
       <workItem from="1504747372590" duration="3913000" />
       <workItem from="1504752813752" duration="4308000" />
-      <workItem from="1504833227554" duration="2635000" />
+      <workItem from="1504833227554" duration="4619000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="135057000" />
+    <option name="totallyTimeSpent" value="137041000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
@@ -407,6 +409,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1482">
           <caret line="78" column="19" lean-forward="false" selection-start-line="78" selection-start-column="19" selection-end-line="78" selection-end-column="19" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -433,34 +436,34 @@
     <entry file="file://$PROJECT_DIR$/_includes/head.html" />
     <entry file="file://$PROJECT_DIR$/_includes/nav.html" />
     <entry file="file://$PROJECT_DIR$/_layouts/about.html" />
-    <entry file="file://$PROJECT_DIR$/join.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="3401">
-          <caret line="179" column="107" lean-forward="false" selection-start-line="179" selection-start-column="107" selection-end-line="179" selection-end-column="107" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/about.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="611">
-          <caret line="212" column="14" lean-forward="true" selection-start-line="212" selection-start-column="14" selection-end-line="212" selection-end-column="14" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/css/style.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="497">
-          <caret line="1872" column="42" lean-forward="false" selection-start-line="1872" selection-start-column="42" selection-end-line="1872" selection-end-column="42" />
+        <state relative-caret-position="382">
+          <caret line="1749" column="8" lean-forward="true" selection-start-line="1749" selection-start-column="8" selection-end-line="1749" selection-end-column="8" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="149">
-          <caret line="65" column="53" lean-forward="true" selection-start-line="65" selection-start-column="53" selection-end-line="65" selection-end-column="53" />
+        <state relative-caret-position="439">
+          <caret line="90" column="21" lean-forward="true" selection-start-line="61" selection-start-column="12" selection-end-line="90" selection-end-column="21" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/join.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="589">
+          <caret line="95" column="13" lean-forward="true" selection-start-line="63" selection-start-column="4" selection-end-line="95" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/about.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="228">
+          <caret line="74" column="51" lean-forward="false" selection-start-line="74" selection-start-column="51" selection-end-line="74" selection-end-column="51" />
           <folding />
         </state>
       </provider>

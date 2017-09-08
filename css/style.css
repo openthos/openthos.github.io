@@ -385,7 +385,7 @@ ul {
 }
 
 /* first level menu items */
-.navbar-default .navbar-nav > li > a {
+.navbar-default .navbar-nav > li > a,.navA{
 	color: #92989b;
 	text-transform: uppercase;
 	font-size: 16px;
@@ -808,7 +808,7 @@ ul {
 }
 .social-links li {
 	display: inline-block;
-	margin: 0 2px 2px 0;
+	margin: 4px 2px -2px 0;
 }
 .social-links li a {
 	width: 45px;
@@ -1755,6 +1755,8 @@ a.overlay.small i {
 #logo img{
 	margin:auto;
 }
+.navbar-nav{
+	margin:0px -15px;}
 
 
 @media(max-width:768px){
@@ -1801,6 +1803,10 @@ a.overlay.small i {
 	.descri{
 		font-size: 12px;
 	}
+}
+
+@media(max-width: 480px){
+	.nav li.fourLinks{display: none;}
 }
 
 /* Medium devices (tablets landscape to portrait) */
