@@ -1870,5 +1870,7 @@ a.overlay.small i {
 	-webkit-background-position:center center !important;
 	background-position:center center !important;}
 
+.container-fluid .collapse{display: block;}
+
 
 
